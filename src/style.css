@@ -116,3 +116,13 @@ color: #5E7E7F;
     bottom: 2cm;
   } 
   
+  .container-3{
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.card-body {
+  padding: 10% 5% 5% 5%;
+}
