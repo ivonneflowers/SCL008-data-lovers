@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     
     <title>Poképedia Go</title>
+
     <link rel="shortcut icon" href="Pokeball.ico">
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    
     <div id="screen1">  
+    
     </head>
 
+    
     <body>
+    
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6">
             <img class="logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
           </div>
           <div class="col-sm-6">
-            <div>
-              <p>Ingresa tu nombre de usuario y contraseña</p>
-            </div>
+              <p class="input-username-password">Ingresa tu nombre de usuario y contraseña</p>
           </div>
         </div>
         <div class="row">
@@ -32,48 +34,45 @@
             </p>
           </div>
           <div class="col-sm-6 input">
-              <div id="input" class="input-group flex-nowrap">
-                  <input type="text" class="rounded-pill"  placeholder="    Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
-                 </div>
-          
-                 <div id="input" class="input-group flex-nowrap">
-                   <input type="text" class="rounded-pill"  placeholder="    Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
+              <div  class="input-group flex-nowrap">
+                  <input type="text" value=" Pepita14" class="rounded-pill"  placeholder="    Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
+                 </div>        
+                 <div  class="input-group flex-nowrap">
+                   <input type="password" class="rounded-pill"  placeholder="    Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
                 </div>
                 <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
           </div>
         </div>
-
-      </div>
-
-     
+      </div>     
+  
     </div>  <!-- fin div primera pantalla -->
 
+    
     <div hidden id = "screen2">
 
-      
-      <div class="container-2" id="kanto">
+      <div class="container-2" >
         <div class="row">   
-          <div class="col-6"><img id ="kanto-img" src="img/kanto.png" alt="kanto">
+          <div class="col-6">
+              <p class= "select-zone">
+                  Selecciona la Zona que quieres ver
+              </p>
             <div class="col-6">
-                <p class= "select-zone">
-                    Selecciona la Zona que quieres ver
-                </p>
+              <a href="#"><img class= "kanto" id ="kanto-img" src="img/kanto.png" alt="kanto"></a>
             </div>
           </div>    
         </div>
       </div>
       
-
     </div> <!--  fin div segunda pantalla -->
 
+    
     <div hidden id= "screen3">
-
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card" style="width: 18rem;">   
+      <img class="card-img-top" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
       
