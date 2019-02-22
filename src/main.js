@@ -6,8 +6,8 @@ document.getElementById("btn-start").addEventListener("click", () => {
 
 })
 
-document.getElementById("btn-kanto").addEventListener("click", () => {
+      document.getElementById("kanto-img").addEventListener("click", () => {
+        document.getElementById("screen2").setAttribute('hidden', true);
+        document.getElementById("screen3").removeAttribute('hidden');
     
-    document.getElementById("screen2").setAttribute('hidden', true);
-    document.getElementById("screen3").removeAttribute('hidden');
-      });
+      })

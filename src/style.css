@@ -1,9 +1,10 @@
 /* screen 1 */
 
-body {
+.container-fluid, .container{
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 /* "Ingresa tu nombre de usuario y contraseña" */
 #root  {
@@ -21,20 +22,8 @@ body {
 
 }
 
-/* Input usuario y contraseña */
-#input {
-    margin-left: 50%;
-    margin-top: 5%;
-    height: 100px;
-    width: 306px;
-    height: 75px;
-    line-height: normal;
-
-}
 /* style inputs */
 .rounded-pill {
-  width: 306px;
-  height: 75px;
   font-family: Tahoma, sans-serif;
   font-size: 25px;
   font-weight: 600;
@@ -44,16 +33,14 @@ body {
   line-height: normal;
   letter-spacing: 2.5px;
   background-color: #ebe1e1;
+  width: 80%;
+  padding: 2%;
+  margin: 1%;
 }
 
 /* btn ingresar */
 #btn-start {
 
-    margin-left: 50%;
-    margin-top: 5%;
-    block-size: 1.4cm; 
-    width: 313px;
-    height: 78px;
     border-radius: 42px;
     background-color: #62d39e;
     color: white;
@@ -63,47 +50,54 @@ body {
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    position: fixed;
+    
     letter-spacing: 2.5px;
   
+}
+
+.input{
+  text-align: center;
 }
 
 /* explicación del juego */
 footer {
     width: 500px;
   height: 200px;
-  font-family: Tahoma, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
+  
   position:absolute;
     top:65%;
     left:10%;
-  letter-spacing: 3px;
-  color: #5e7e7f;
+  
 }
 
-/* logo */
-#logo {
-    margin-left: 2cm;
-    margin-top: 3%;
-    width: 40%;
-    position: fixed;
-        
+.logo {
+  width: 100%;
+}
+
+.introduction{
+    
+  font-family: Tahoma, sans-serif;
+font-size: 20px;
+font-weight: 600;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: 3px;
+color: #5e7e7f;
+padding: 10% 5% 5% 5%;
 }
 
 /* screen 2 */
 
-/* Selecciona al zona que quieres */
-h3 {
-    position: absolute;
-width: 820px;
-height: 118px;
-left: 310px;
-top: 59px;
+.container-2, .container{
+  background-image: url(img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
+/* Selecciona la zona que quieres */
+.select-zone {
 font-family: Tahoma, sans-serif;
 font-style: normal;
 font-weight: 600;
@@ -115,37 +109,10 @@ letter-spacing: 0.1em;
 color: #5E7E7F;
 }
 
-/*  Container necesitado para posicionar el butón */
- .container {
-    position: relative;
-    width: 40%;
-    margin-top: 20%;
-  } 
-  
-  /* Hacer la img kanto responsive */
-  .container .col {
+  /* Hacer la img kanto responsive*/
+  .container-2 .col {
     height: 5cm;
     margin-top: 20%;
-    position: relative;
     bottom: 2cm;
-  }
+  } 
   
-  /* style el button y moverlo para que esté dentro de la imagen */
-  .container .btn {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color:transparent;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .container .btn:hover {
-    background-color: transparent;
-  }

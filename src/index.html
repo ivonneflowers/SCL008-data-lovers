@@ -5,47 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
     <title>Poképedia Go</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Pokeball.ico">
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
     <div id="screen1">  
     </head>
 
     <body>
-      <div> 
-        <img id = "logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
-      </div >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
+          </div>
+          <div class="col-sm-6">
+            <div>
+              <p>Ingresa tu nombre de usuario y contraseña</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <p class= "introduction">
+                La red social que te ayuda a investigar sobre tus Pokémones favoritos, ver estadísticas de estos, manejar mejor tus progresos en Pokémon Go, y ¡muchas cosas más!
+            </p>
+          </div>
+          <div class="col-sm-6 input">
+              <div id="input" class="input-group flex-nowrap">
+                  <input type="text" class="rounded-pill"  placeholder="    Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
+                 </div>
+          
+                 <div id="input" class="input-group flex-nowrap">
+                   <input type="text" class="rounded-pill"  placeholder="    Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
+                </div>
+                <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
+          </div>
+        </div>
 
-      <div id="root">
-        <p>Ingresa tu nombre de usuario y contraseña</p>
       </div>
-
-      <br>
-
-      <div id="input" class="input-group flex-nowrap">
-        <input type="text" class="rounded-pill"  placeholder="    Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
-       </div>
-
-       <div id="input" class="input-group flex-nowrap">
-         <input type="text" class="rounded-pill"  placeholder="    Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
-      </div>
-
-      <footer class= "introduction">La red social que te ayuda a investigar sobre tus Pokémones favoritos, ver estadísticas de estos, manejar mejor tus progresos en Pokémon Go, y ¡muchas cosas más!</footer>
-      <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
 
      
     </div>  <!-- fin div primera pantalla -->
 
     <div hidden id = "screen2">
 
-      <h3>Selecciona la zona que quieres ver</h3>
-
-      <div class="container" id="kanto">
+      
+      <div class="container-2" id="kanto">
         <div class="row">   
           <div class="col-6"><img id ="kanto-img" src="img/kanto.png" alt="kanto">
-          </div>        
-          <button id="btn-kanto" class="btn">Kanto</button>
+            <div class="col-6">
+                <p class= "select-zone">
+                    Selecciona la Zona que quieres ver
+                </p>
+            </div>
+          </div>    
         </div>
       </div>
       
