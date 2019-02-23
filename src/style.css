@@ -89,18 +89,42 @@
   font-size: 26px;
   text-align: center;
   letter-spacing: 0.1em;
+  margin-left: 30%;
+  color: #5E7E7F;
 
-color: #5E7E7F;
 }
 
-/* Hacer la img kanto responsive*/
-  .kanto {
-  height: 5cm;
-  margin-top: 20%;
-  bottom: 2cm;
+/* img de mapass */
   
+.kanto {
+  height: 5cm;
+  margin-top: 1%;
+  margin-left: 80%;
+  bottom: 2cm;
+  } 
+  
+  .hoenn {
+    height: 5cm;
+    bottom: 2cm;
+    margin-left: 280%;  
   } 
 
+  .sinnoh {
+    height: 5cm;
+    bottom: 2cm;
+    position: absolute;
+    margin-bottom: 10em;
+    margin-left: 100%;
+  } 
+  
+  .johto {
+    height: 5cm;
+    margin-top: 10%;
+    margin-left: 30em;
+    margin-bottom: 10em;
+    bottom: 2cm;
+  } 
+  
   .container-3{
     background-image: url(img/fondo.jpg);
     background-size: cover;
