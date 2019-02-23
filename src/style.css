@@ -79,7 +79,6 @@
   height: 100vh;
 }
 
-
 /* Selecciona la zona que quieres */
 
 .select-zone {
@@ -112,3 +111,9 @@ color: #5E7E7F;
 .card-body {
   padding: 10% 5% 5% 5%;
 } 
+
+a .kanto:hover {
+  transition: opacity 0.3s;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
