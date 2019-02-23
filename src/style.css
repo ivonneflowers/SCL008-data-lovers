@@ -102,15 +102,4 @@ color: #5E7E7F;
   
   } 
   
-   a .kanto:hover {
-    transition: opacity 0.3s;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
 
-  @media (max-width: 600px) {
-    .container-fluid{
-      height: 100%;
-    }
-
-  }
