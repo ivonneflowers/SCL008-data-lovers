@@ -111,7 +111,7 @@
 
   .sinnoh {
     height: 5cm;
-    bottom: 2cm;
+    bottom: 5cm;
     position: absolute;
     margin-bottom: 10em;
     margin-left: 100%;
@@ -141,3 +141,30 @@ a .kanto:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
+
+/* Mediaquery para mover los mapas y achicarlos en teléfonos*/
+
+@media (max-width: 731px) {
+  .kanto, .sinnoh, .johto, .hoenn {
+    height: 2cm;
+  }
+   }
+  @media (max-width: 731px) {
+    .johto {
+    margin-left: 10em;
+    }
+  }
+
+  /* Mediaquery para ajustar fondos en los teléfonos*/
+
+@media (max-width: 600px) {
+  .container-2 {
+    height: 100%;
+  }
+   }
+  @media (max-width: 600px) {
+    .container-fluid {
+      height: 100%;
+    }
+  }

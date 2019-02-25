@@ -1,71 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-  
-    <title>Poképedia Go</title>
 
-    <link rel="shortcut icon" href="Pokeball.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+
+  <title>Poképedia Go</title>
+
+
+  <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
+  <link rel="shortcut icon" href="Pokeball.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+
+  <div id="screen1">  
     
-    <div id="screen1">  
+  </head>
     
-    </head>
-    
-    <body>
+  <body>
       
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
-          </div>
-          <div class="col-sm-6">
-              <p class="input-username-password">Ingresa tu nombre de usuario y contraseña</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <p class= "introduction">
-              La red social que te ayuda a investigar sobre tus Pokémones favoritos, ver estadísticas de estos, manejar mejor tus progresos en Pokémon Go, y ¡muchas cosas más!
-            </p>
-          </div>
-          <div class="col-sm-6 input">
-            <div  class="input-group flex-nowrap">
-              <input type="text" value=" Pepita14" class="rounded-pill"  placeholder="    Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
-            </div>        
-            <div  class="input-group flex-nowrap">
-              <input type="password" class="rounded-pill"  placeholder="    Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
-            </div>      
-            <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
-      
-          </div>
-        </div>
-      </div>     
   
-      
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
+        </div>
+        <div class="col-sm-6">
+          <p class="input-username-password">Ingresa tu nombre de usuario y contraseña</p>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-sm-6">
+          <p class= "introduction">
+            La red social que te ayuda a investigar sobre tus Pokémones favoritos, ver estadísticas de estos, manejar mejor tus progresos en Pokémon Go, y ¡muchas cosas más!
+          </p>
+  
+        </div>
+        <div class="col-sm-6 input">
+          <div  class="input-group flex-nowrap">
+            <input type="text" value=" Pepita14" class="rounded-pill"  placeholder="    Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
+          </div>        
+          <div  class="input-group flex-nowrap">
+            <input type="password" class="rounded-pill"  placeholder="    Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
+          </div>     
+          <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
+  
+          
+        </div>
+      </div>
+    </div>     
+  
+
     
-    </div>  <!-- fin div primera pantalla -->
+  </div>  <!-- fin div primera pantalla -->
+
 
     <div hidden id = "screen2">
-     
+  
       <div class="container-2" >    
         <div class="row">
           <p class= "select-zone"> 
-            Selecciona la Zona que quieres ver
+            Por favor selecciona la Zona que quieres ver
           </p>     
+      
           <div class="col-6">
             <a href="#"><img class= "kanto" id ="kanto-img" src="img/kanto.png" alt="kanto"></a>
             <div class="col-6">
               <a href="#"><img class= "hoenn" id ="hoenn-img" src="img/hoenn.png" alt="hoenn"></a>
               <div class="row">
                 <div class="col-6">
-                  <a href="#"><img class= "sinnoh" id ="sinnoh-img" src="img/sinnoh.png" alt="sinnoh"></a>
-                  <div class="col-6">
+                  <a href="#"><img class= "sinnoh" id ="sinnoh-img" src="img/sinnoh.png" alt="sinnoh"></a>   
+                  <div class="col-6">    
                     <a href="#"><img class= "johto" id ="johto-img" src="img/johto.png" alt="johto"></a>
                     
+      
                   </div>
                 </div>
               </div>
@@ -74,45 +86,57 @@
         </div>
       </div> 
 
+
     </div> <!--  fin div segunda pantalla -->
 
-    <div hidden id="screen3">
+    
+    <div hidden id="screen3">   
 
-      <div class="row">
-      
-        <div class="col-6">
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>    
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="col-6">
-                </div>
-              </div>
-
-          <div class="col-6">
-
+        <div class="container">          
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tipos
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Fuego</a></li>
+                <li><a href="#">Agua</a></li>
+                <li><a href="#">Tierra</a></li>
+              </ul>
+            </div>
           </div>
 
-        </div>
+          <br>
+
+      <div class="row"> 
+        <div class="col-6"> 
+          <div class="card" style="width: 9rem;">
+            <img class="card-img-top" src="" alt="Card img">
+            <div class="card-body">   
+              <h5 class="card-title"></h5>    
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>   
+            
+            </div>
+            <div class="col-6">     
+            </div>
+          </div>
+        </div>   
       </div>
-
-
-
+     
+   
     </div> <!-- fin div tercera pantalla -->
     
-      <script src="./data/pokemon/pokemon.js"></script>
-      <script src="data.js"></script>
-      <script src="main.js"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    
+ 
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+
+
+  </body>
+
+  </html>
 
   
-    </body>
-  
-  
-    </html>
