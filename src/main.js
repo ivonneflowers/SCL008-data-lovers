@@ -6,11 +6,12 @@ const showData = (data) => {
     //console.log(elemento.img)
     // console.log(elemento.name)
     // console.log(elemento.num)
-    document.getElementById('card').innerHTML += `<div class="col-md-2">
-                                                    <img src="${elemento.img}" alt="${elemento.name}">
-                                                    <p>Nombre: ${elemento.name}</p>
-                                                    <p>Número: ${elemento.num}</p>
-                                                    <div class="col-md-10">
+    document.getElementById('card').innerHTML += `<div class="card" style= "width: 9rem;">
+                                                    <img class= "card-img-top" src="${elemento.img}" alt="Card image cap">
+                                                    <div class= "card-body">
+                                                    <p> ${elemento.name}</p>
+                                                    <p> ${elemento.num}</p>
+                                                    <p class="card-text"></p>
                                                     </div>
                                                   </div>`
   })

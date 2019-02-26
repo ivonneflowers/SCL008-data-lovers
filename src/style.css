@@ -9,6 +9,8 @@
   height: 100vh;
 }
 
+/* img logo pokepedia go */
+
 .logo {
   width: 75%;
   margin-top: 20%;
@@ -28,7 +30,7 @@
   padding: 25% 5% 5% 5%;
 }
 
-/* style inputs */
+/* style de inputs primera pantalla*/
 .rounded-pill {
   font-family: Tahoma, sans-serif;
   font-size: 25px;
@@ -56,6 +58,8 @@
   
 }
 
+/* introducción a la app pantalla 1 */
+
 .introduction{
   font-family: Tahoma, sans-serif;
   font-size: 20px;
@@ -76,10 +80,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
 }
 
-/* Selecciona la zona que quieres */
+/* Titulo: Selecciona la zona que quieres */
 
 .select-zone {
   font-family: Tahoma, sans-serif;
@@ -124,24 +128,30 @@
     margin-bottom: 10em;
     bottom: 2cm;
   } 
+
+ /*  hacer que la img del mapa kanto se vea como botón responsive */
+  a .kanto:hover {
+    transition: opacity 0.3s;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+ /*  Screen 3 */
   
   .container-3{
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: space;
     height: 100vh;
 }
 
-.card-body {
-  padding: 10% 5% 5% 5%;
-} 
+/* tarjetas de pokémon */
 
-a .kanto:hover {
-  transition: opacity 0.3s;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+.card {
+  background: transparent;
+  
 }
-
 
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
 
@@ -158,13 +168,20 @@ a .kanto:hover {
 
   /* Mediaquery para ajustar fondos en los teléfonos*/
 
-@media (max-width: 600px) {
-  .container-2 {
-    height: 100%;
-  }
-   }
   @media (max-width: 600px) {
     .container-fluid {
+      height: 100%;
+    }
+  }
+
+@media (max-width: 1366px) {
+  .container-2 {
+    height: 100vh;
+  }
+}
+  
+  @media (max-width: 600px) {
+    .container-3 {
       height: 100%;
     }
   }
