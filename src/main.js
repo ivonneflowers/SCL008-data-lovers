@@ -7,13 +7,14 @@ const showData = (data) => {
     // console.log(elemento.name)
     // console.log(elemento.num)
     document.getElementById('card').innerHTML += `<div class="card" style= "width: 9rem;">
-                                                    <img class= "card-img-top" src="${elemento.img}" alt="Card image cap">
-                                                    <div class= "card-body">
-                                                    <p> ${elemento.name}</p>
+                                                    <div class= "card-name">
                                                     <p> ${elemento.num}</p>
-                                                    <p class="card-text"></p>
+                                                    <img class= "card-img-top" src="${elemento.img}" alt="Card image cap">
+                                                    <p> ${elemento.name}</p>
                                                     </div>
-                                                  </div>`
+                                                    </div>`
+                                                    
+                                                   
   })
 }
 

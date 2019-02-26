@@ -142,7 +142,7 @@
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: space;
+    background-repeat: repeat-y;
     height: 100vh;
 }
 
@@ -152,13 +152,37 @@
 
 /* tarjetas de pokémon */
 
-.card {
-  background: transparent;
-  
+.card-name{
+  font-family: Tahoma, sans-serif;
+  font-weight: 90;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #5e7e7f;
+  padding: 5% 1% 1% 1%;
+  text-align: center
+  }
+
+.card{
+  background-color:  #d9e5e6a8 
+  margin-bottom: 29px;
+  margin-left: 29px;
+  border-radius: 10px;
+	width:100px;
+	height: 150px;
 }
 
-/* Mediaquery para mover los mapas y achicarlos en teléfonos*/
+.card-img-top {
+  width: 50px;
+  height: auto;
+}
 
+
+  
+
+
+
+/* Mediaquery para mover los mapas y achicarlos en teléfonos*/
+/* 
 @media (max-width: 731px) {
   .kanto, .sinnoh, .johto, .hoenn {
     height: 2cm;
@@ -171,7 +195,7 @@
   }
 
   /* Mediaquery para ajustar fondos en los teléfonos*/
-
+/* 
   @media (max-width: 600px) {
     .container-fluid {
       height: 100%;
@@ -188,4 +212,4 @@
     .container-3 {
       height: 100%;
     }
-  }
+  }  */
