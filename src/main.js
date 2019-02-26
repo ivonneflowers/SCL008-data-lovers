@@ -1,4 +1,23 @@
 /* Manejo del DOM */
+const data = window.POKEMON.pokemon;
+console.log(data)
+const showData = (data) => {
+  data.forEach(elemento => {
+    //console.log(elemento.img)
+    // console.log(elemento.name)
+    // console.log(elemento.num)
+    document.getElementById('card').innerHTML += `<div class="col-md-2">
+                                                    <img src="${elemento.img}" alt="${elemento.name}">
+                                                    <p>Nombre: ${elemento.name}</p>
+                                                    <p>Número: ${elemento.num}</p>
+                                                    <div class="col-md-10">
+                                                    </div>
+                                                  </div>`
+  })
+}
+
+window.onload = showData(data)
+
 document.getElementById("btn-start").addEventListener("click", () => {
     
   document.getElementById("screen1").setAttribute('hidden', true);
@@ -9,24 +28,4 @@ document.getElementById("btn-start").addEventListener("click", () => {
       document.getElementById("kanto-img").addEventListener("click", () => {
         document.getElementById("screen2").setAttribute('hidden', true);
         document.getElementById("screen3").removeAttribute('hidden');
-
-
-
-        //sobreescribiendo data en las cards de los Pokémon
-          
-        const pokemon = POKEMON.pokemon;
-        
-        for (let i = 0; i < POKEMON.length; i++) {
-        
-          document.getElementsByClassName(card-img-top).src.innerHTML = "";
-  
-          document.getElementsByClassName(card-img-top).src.innerHTML += `${pokemon[i].img}`;
-          document.getElementsByClassName(card-title).innerHTML += `<p>${pokemon[i].name}</p>`
-
-        
-        }
-        
-      })
-
-
-     
+      });
