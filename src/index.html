@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
 
+<!-- Comienza primera pantalla, se muestra el logo, la bienvenida, inputs, etc -->
   <div id="screen1">  
   </head>
     
@@ -26,14 +27,14 @@
           <img class="logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
         </div>
         <div class="col-sm-6">
-          <p class="input-username-password">Ingresa tu nombre de usuario y contraseña</p>
+          <p class="input-username-password">¡Hola! Por favor ingresa un usuario y contraseña.</p>
         </div>
       </div>
   
       <div class="row">
         <div class="col-sm-6">
           <p class= "introduction">
-            La red social que te ayuda a investigar sobre tus Pokémones favoritos, ver estadísticas de estos, manejar mejor tus progresos en Pokémon Go, y ¡muchas cosas más!
+            La app que te ayuda a investigar sobre tus Pokémon favoritos, ver estadísticas sobre ellos, manejar tu progreso en Pokémon Go y muchas cosas más.
           </p>
   
         </div>
@@ -54,7 +55,7 @@
 
   </div>  <!-- fin div primera pantalla -->
 
-
+<!-- Comienza segunda pantalla, se muestran los mapas -->
     <div hidden id = "screen2">
   
       <div class="container-2 bg2" >    
@@ -85,10 +86,9 @@
 
     </div> <!--  fin div segunda pantalla -->
 
-    <!--comienzo tercera pantalla, se muestran las tarjetas-->
-
-         
+    <!--comienza tercera pantalla, se muestran las tarjetas-->
     <div hidden id="screen3">   
+
         <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
           <img src="img/AVATAR.png" style="width: 6%;" alt="avatar">
             <a class="navbar-brand" href="#">Bienvenida Pepita14</a>
@@ -115,45 +115,19 @@
   
         <div class="container-3 bg3">
           <div class="row" id="card">
-            <div class="modal fade" id="exampleModal" tabindex="-1" role ="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="example-modal" tabindex="-1" role ="dialog" aria-labelledby="example-modal-label" aria-hidden="true">
             </div>
           </div>
         </div>
-
-
-     <!--  <div hidden class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Pokemon name</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Hola aquí van cosas
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-light">Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </div>  -->
-
-      
 
     </div> <!-- fin div tercera pantalla -->
     
-    
- 
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
-
 
   </body>
 

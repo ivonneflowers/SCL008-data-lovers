@@ -1,6 +1,9 @@
 /* screen 1 */
 /* container 1 background */
 
+.html {
+  font-family: Tahoma, sans-serif;
+}
 .container-fluid{
   background-image: url(img/fondo1.jpg);
   background-size: cover;
@@ -20,7 +23,6 @@
 
 /* "Ingresa tu nombre de usuario y contraseña" */
 .input-username-password{
-  font-family: Tahoma, sans-serif;
   font-size: 40px;
   font-weight: 600;
   font-style: normal;
@@ -28,12 +30,15 @@
   line-height: normal;
   letter-spacing: 3px;
   color: #5e7e7f;
-  padding: 25% 5% 5% 5%;
+  padding: 25% 6% 5% 0%;
+}
+
+.input {
+  margin-top: -3%;
 }
 
 /* style de inputs primera pantalla*/
 .rounded-pill {
-  font-family: Tahoma, sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: #5e7e7f;
@@ -44,7 +49,7 @@
   background-color: #ebe1e1;
   width: 80%;
   padding: 2%;
-  margin: 1%;
+  margin: 2%;
 }
 
 /* btn ingresar */
@@ -56,13 +61,11 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 2.5px;
-  
 }
 
 /* introducción a la app pantalla 1 */
 
 .introduction{
-  font-family: Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 600;
   font-style: normal;
@@ -83,53 +86,49 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 100%;
+  height: 100vh;
 }
 
 /* Titulo: Selecciona la zona que quieres */
 
 .select-zone {
-  font-family: Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   font-size: 26px;
   text-align: center;
   letter-spacing: 0.1em;
-  margin-left: 30%;
+  margin-left: 25%;
+  margin-top: 1%;
   color: #5E7E7F;
-
 }
+
 
 /* img de mapass */
   
+
 .kanto {
   height: 5cm;
   margin-top: 1%;
   margin-left: 80%;
-  bottom: 2cm;
-  } 
+  }
   
+
   .hoenn {
     height: 5cm;
-    bottom: 2cm;
     margin-left: 280%;  
   } 
 
   .sinnoh {
     height: 5cm;
-    bottom: 5cm;
-    position: absolute;
-    margin-bottom: 10em;
-    margin-left: 130%;
+    margin-left: 140%;
+    margin-top: -170%;
   } 
   
   .johto {
     height: 5cm;
-    margin-top: 10%;
     margin-left: 30em;
-    margin-bottom: 10em;
-    bottom: 4cm;
+    margin-top: -170%;
   } 
 
  /*  hacer que la img del mapa kanto se vea como botón responsive */
@@ -143,7 +142,6 @@
 
 /*  container-3 background */
   
-  
 .bg3 {
   background-image: url(img/fondo2.jpg);
   background-size: 1500px 850px;
@@ -151,7 +149,6 @@
   background-repeat: repeat;
   height: 100%;
 }
-
 
 /* tarjetas de pokémon */
 
@@ -165,20 +162,17 @@
 }
 
 .card-name{
-  font-family: Tahoma, sans-serif;
   font-weight: 90;
   font-size: 18px;
   letter-spacing: 0px;
   color: #5e7e7f;
   padding: 6% 1% 1% 1%;
   text-align: center
-  
 }
 
 /* modal */
 
 .pokemon-candy, .pokemon-weaknesses, .pokemon-type, .pokemon-egg {
-  font-family: Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -200,8 +194,6 @@
 
 /*Esstilos del modal*/
 
-
-
 .modal-content{
   background-color:  #d9e5e6c2;
   border-radius: 30px;
@@ -209,7 +201,6 @@
 }
 
 .modal-title{
-  font-family: Tahoma, sans-serif;
   font-weight: 90;
   font-size: 30px;
   color: #5e7e7f;
@@ -225,9 +216,7 @@
   font-stretch: normal;
   line-height: normal;
   font-weight: 80;
-  
 }
-
 
 .navbar {
   padding: 1rem 3rem;
@@ -246,7 +235,6 @@
       margin-left: 10em;
     }
   }
-
   
   /* Mediaquery para ajustar fondos en los teléfonos*/
 
@@ -261,5 +249,6 @@
       width: 4rem;
     }
   }
-
-  
+  .row {
+    width: 100%;
+  }
