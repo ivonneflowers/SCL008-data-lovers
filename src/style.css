@@ -1,4 +1,5 @@
 /* screen 1 */
+/* container 1 background */
 
 .container-fluid{
   background-image: url(img/fondo1.jpg);
@@ -74,7 +75,9 @@
 
 /* screen 2 */
 
-.container-2 {
+/* container-2 background */
+
+.bg2 {
   background-image: url(img/fondo-screen-2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,14 +140,18 @@
   }
 
  /*  Screen 3 */
+
+/*  container-3 background */
   
-  .bg {
-    background-image: url(img/fondo2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    height: 100%;
-  }
+  
+.bg3 {
+  background-image: url(img/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100%;
+}
+
 
 /* tarjetas de pokémon */
 
@@ -165,12 +172,13 @@
   color: #5e7e7f;
   padding: 6% 1% 1% 1%;
   text-align: center
-  }
+  
+}
 
-  .pokemon-name {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
+.pokemon-name {
+  margin-bottom: 1rem;
+  margin-top: 1rem;  
+}
 
 .navbar {
   padding: 1rem 3rem;
@@ -183,12 +191,14 @@
     height: 2cm;
   }
    }
-  @media (max-width: 731px) {
+  
+   @media (max-width: 731px) {
     .johto {
-    margin-left: 10em;
+      margin-left: 10em;
     }
   }
 
+  
   /* Mediaquery para ajustar fondos en los teléfonos*/
 
   @media (max-width: 600px) {
@@ -197,14 +207,4 @@
     }
   }
 
-@media (max-width: 1366px) {
-  .container-2 {
-    height: 100vh;
-  }
-}
   
-  @media (max-width: 600px) {
-    .container-3 {
-      height: 100%;
-    }
-  }

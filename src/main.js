@@ -11,11 +11,8 @@ const showData = (data) => {
     <p class="pokemon-name"> ${element.name}</p>
     </div>
     </div>`
-
-    
        
   })
-
 }
 
 document.getElementById("card").addEventListener("click", () => {
