@@ -1,6 +1,5 @@
 /* Manejo del DOM */
 const data = window.POKEMON.pokemon;
-let counter = 0;
 const showData = (data) => {
 
   data.forEach(element => {
@@ -12,11 +11,8 @@ const showData = (data) => {
     <p class="pokemon-name"> ${element.name}</p>
     </div>
     </div>`
-
-    
     
     document.getElementById("card").addEventListener("click", () => {
-
     
       document.getElementById("example-modal").innerHTML += `<div class="modal-dialog" role="document">
     
@@ -44,6 +40,18 @@ const showData = (data) => {
       </div>  
       </div> `
 
+      document.getElementById('select-type').addEventListener('click', () => {
+        
+        let condition = document.getElementById('select-type').value;
+        let result = window.filterData(data, condition);
+        card.innerHTML = '';
+
+        result.forEach(element => {
+          card.innerHTML += `<p>${element.name}</p>        
+          <img class="image" src="${element.img}" alt="${element.name}">`
+
+        })
+      });
     })
   })
 }

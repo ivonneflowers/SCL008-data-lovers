@@ -1,23 +1,8 @@
-/* Manejo de data */
+const filterData = (data, condition) => {
+  let filter = data.filter(element => {
+    return element.type === condition;
+  })
+  return filter;
+}
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-/* const example = () => {
-  return 'example';
-};
-
-window.example = example;
-
-
-window.data = {
-  filterData : (data, condition) => {
-
-  },
-  sortData : (data, sortBy, sortOrder) => {
-
-  },
-  computeStats : (data) => {
-
-  }
-} */
+window.filterData = filterData;
