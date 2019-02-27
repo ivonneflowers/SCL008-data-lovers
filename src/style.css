@@ -145,8 +145,8 @@
   
   
 .bg3 {
- /*  background-image: url(img/fondo2.jpg); */
-  background-size: cover;
+  background-image: url(img/fondo2.jpg);
+  background-size: 1500px 850px;
   background-position: center;
   background-repeat: repeat;
   height: 100%;
@@ -194,8 +194,40 @@
 
 .pokemon-name {
   margin-bottom: 1rem;
-  margin-top: 1rem;  
+  margin-top: 1rem; 
+
 }
+
+/*Esstilos del modal*/
+
+
+
+.modal-content{
+  background-color:  #d9e5e6c2;
+  border-radius: 30px;
+	width:500px;
+}
+
+.modal-title{
+  font-family: Tahoma, sans-serif;
+  font-weight: 90;
+  font-size: 30px;
+  color: #5e7e7f;
+  padding: 6% 1% 1% 1%;
+  text-align: center;
+}
+
+ .btn-light{
+  background-color: #62d39e;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  font-weight: 80;
+  
+}
+
 
 .navbar {
   padding: 1rem 3rem;
