@@ -10,9 +10,6 @@ const showData = (data) => {
     <p> ${element.num}</p>
     <a href="#"><img class= "card-img-top" src="${element.img}" alt="Card image cap"></a>
     <p class="pokemon-name"> ${element.name}</p>
-
-    !<--Modal -->
-
     <div class="modal fade" id="exampleModal${element.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
     <div class="modal-content">
