@@ -18,14 +18,20 @@ const showData = (data) => {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-      <img src="${element.img}" alt="modal img">
+      <div>
+      </div>
+      <div>
+      <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
+      </div>
+      <div>
       <p class="pokemon-num"> ${element.num}</p>
-        <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
+      </div
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
+      <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
       <p class="pokemon-type"> Tipos: ${element.type} </p>
       <br>
       <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
@@ -35,8 +41,8 @@ const showData = (data) => {
       <img id="egg-img" src= "img/egg.png" alt="egg img">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        
+        <button type="button" class="seeMore">Ver más</button>
       </div>
     </div>
   </div>
