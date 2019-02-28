@@ -153,7 +153,7 @@
 /* tarjetas de pokémon */
 
 .card{
-  background-color:  #d9e5e6a8;
+  background-color:  #d9e5e6;
   margin-bottom: 29px;
   margin-left: 29px;
   margin-top: 1%;
@@ -195,31 +195,56 @@
 /*Esstilos del modal*/
 
 .modal-content{
-  background-color:  #d9e5e6c2;
-  border-radius: 30px;
+  font-family: Tahoma, sans-serif;
+  background-image: linear-gradient(to bottom right, #005487, #14889F);;
+  border-radius: 50px;
 	width:500px;
 }
 
+.modal-body{
+  font-family: Tahoma, sans-serif;
+  background-color: #d9e5e6;
+}
+
+.pokemon-modal-img{
+  margin-left: 10%;
+  margin-top: 30%;
+}
+
+.modal-footer{
+  font-family: Tahoma, sans-serif;
+  background-color: #d9e5e6;
+  border-radius: 0px 0px 50px 50px;
+}
+
 .modal-title{
-  font-weight: 90;
+  font-family: Tahoma, sans-serif;
+  font-weight: 200;
   font-size: 30px;
-  color: #5e7e7f;
-  padding: 6% 1% 1% 1%;
+  color: white;
   text-align: center;
 }
 
- .btn-light{
-  background-color: #62d39e;
+ .seeMore{
+  font-size: 12px;
+  font-weight: 200;
   color: white;
-  font-size: 20px;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  font-weight: 80;
+  letter-spacing: 1.5px;
+  background-color:#62d39e;
+  width: 20%;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 30px;
 }
 
 .navbar {
-  padding: 1rem 3rem;
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #5e7e7f;
 }
 
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
