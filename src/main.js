@@ -5,7 +5,7 @@ const showData = (data) => {
   data.forEach(element => {
 
     document.getElementById('card').innerHTML += 
-    `<div data-toggle="modal" data-target="#exampleModal" class="card" style= "width: 8rem;">
+    `<div data-toggle="modal" data-target="#exampleModal${element.id}" class="card" style= "width: 8rem;">
     <div class= "card-name">
     <p> ${element.num}</p>
     <a href="#"><img class= "card-img-top" src="${element.img}" alt="Card image cap"></a>
@@ -14,7 +14,7 @@ const showData = (data) => {
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal${element.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
