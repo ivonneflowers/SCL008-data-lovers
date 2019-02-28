@@ -4,7 +4,7 @@
 .html {
   font-family: Tahoma, sans-serif;
 }
-.container-fluid{
+.bg1{
   background-image: url(img/fondo1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@
   /* Mediaquery para ajustar fondos en los teléfonos*/
 
   @media (max-width: 600px) {
-    .container-fluid {
+    .bg1 {
       height: 100%;
     }
   }

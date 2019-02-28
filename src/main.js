@@ -18,13 +18,21 @@ const showData = (data) => {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <img src="${element.img}" alt="modal img">
+      <p class="pokemon-num"> ${element.num}</p>
+        <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+      <p class="pokemon-type"> Tipos: ${element.type} </p>
+      <br>
+      <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
+      <br>
+      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
+      <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+      <img id="egg-img" src= "img/egg.png" alt="egg img">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -37,12 +45,7 @@ const showData = (data) => {
     
     </div>
     </div>`
-    
-   /* document.getElementById("card").addEventListener("click", () => {
-    
-      document.getElementById("example-modal").innerHTML += `<div class="modal-dialog" role="document">*/
-    
-      
+        
 
       document.getElementById('select-type').addEventListener('click', () => {
         
