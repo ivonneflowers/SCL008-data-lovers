@@ -133,6 +133,7 @@
   } 
 
  /*  hacer que la img del mapa kanto se vea como botón responsive */
+
   a .kanto:hover {
     transition: opacity 0.3s;
     opacity: 0.5;
@@ -150,16 +151,6 @@
   background-repeat: repeat;
   height: 100%;
   padding-left: 7.5%;
-}
-
-.form-control {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: normal;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  color: #5E7E7F;
-
 }
 
 /* tarjetas de pokémon */
@@ -208,7 +199,8 @@
 
 .modal-content{
   font-family: Tahoma, sans-serif;
-  background-image: linear-gradient(to bottom right, #005487, #14889F);;
+  background-image: linear-gradient(to bottom right, #00538786, #14889F);;
+  background-color: transparent;
   border-radius: 50px;
 	width:500px;
 }
@@ -226,23 +218,25 @@
 }
 
 .pokemon-modal-img{
-  margin-left: 140%;
-  margin-top: 30%;
+  margin-left: 105%;
+  margin-top: 5%;
 }
 
 .modal-footer{
   background-color: #d9e5e6;
   border-radius: 0px 0px 50px 50px;
+  padding: 0.50rem;
 }
 
 .modal-title{
   font-weight: 200;
   font-size: 30px;
-  color: #5e7e7f;
-  text-align: center;
+  color: #d9e5e6;
+  display: flex;
+  margin-left: 95%;
 }
 
- .seeMore{
+ .see-more{
   font-size: 12px;
   font-weight: 200;
   color: white;
@@ -256,6 +250,8 @@
   margin: 2%;
   border-radius: 30px;
 }
+
+/* navbar, selects de ordenar, etc */
 
 .navbar {
   font-size: 20px;
@@ -271,6 +267,16 @@
   text-align: center;
   letter-spacing: 0.1em;
   color: #5E7E7F;
+}
+
+.form-control {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #5E7E7F;
+
 }
 
 .select-type {

@@ -1,7 +1,6 @@
 /* Manejo del DOM */
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('card');
-const conditionDato = document.getElementById('select-data').value;
 
 const showData = (data) => {
   
@@ -20,6 +19,7 @@ const showData = (data) => {
       <div>
       </div>
       <div>
+      <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
       <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
       </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -27,18 +27,16 @@ const showData = (data) => {
         </button>
       </div>
       <div class="modal-body">
-      <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
+      
       <p class="pokemon-type"> Tipos: ${element.type} </p>
-      <br>
       <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-      <br>
       <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
       <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
       <img id="egg-img" src= "img/egg.png" alt="egg img">
       </div>
       <div class="modal-footer">
         
-        <button type="button" class="seeMore">Cerrar</button>
+        <button type="button" class="see-more">Cerrar</button>
       </div>
     </div>
     </div>
@@ -65,6 +63,7 @@ const showData = (data) => {
           <div>
           </div>
           <div>
+          <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
           <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
           </div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -72,18 +71,16 @@ const showData = (data) => {
             </button>
           </div>
           <div class="modal-body">
-          <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
+          
           <p class="pokemon-type"> Tipos: ${element.type} </p>
-          <br>
           <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-          <br>
           <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
           <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
           <img id="egg-img" src= "img/egg.png" alt="egg img">
           </div>
           <div class="modal-footer">
             
-            <button type="button" class="seeMore">Cerrar</button>
+            <button type="button" class="see-more">Cerrar</button>
           </div>
         </div>
         </div>
