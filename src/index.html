@@ -35,13 +35,13 @@
       <div class="row">
         <div class="col-sm-6">
           <p class= "introduction">
-            La app que te ayuda a investigar sobre tus Pokémon favoritos, ver estadísticas sobre ellos, manejar tu progreso en Pokémon Go y muchas cosas más.
+            La app ligada a Pokémon Go que te ayuda a investigar sobre tus Pokémon favoritos, ver estadísticas sobre ellos, manejar tu progreso y muchas cosas más.
           </p>
   
         </div>
         <div class="col-sm-6 input">
           <div  class="input-group flex-nowrap">
-            <input type="text" value="Pepita14" class="rounded-pill"  placeholder="Usuario" aria-label="Usuario" >
+            <input type="text" value="PokeAdicto14" class="rounded-pill"  placeholder="Usuario" aria-label="Usuario" >
           </div>        
           <div  class="input-group flex-nowrap">
             <input type="password" class="rounded-pill"  placeholder="Contraseña" aria-label="Contraseña" >
@@ -91,7 +91,7 @@
 
         <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
           <img src="img/AVATAR.png" style="width: 6%;" alt="avatar">
-            <a class="navbar-brand">¡Bienvenida Pepita14!</a>
+            <a class="navbar-brand">¡Bienvenido PokeAdicto14!</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-text" aria-controls="navbar-text" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -110,14 +110,23 @@
                 </section>    
                 <section>
                     <span class="navbar-text">
-                        Ordena alfabéticamente
+                        Ordena alfabéticamente...
                       </span>
                 <select id="select-order">
                     <option value="0">Seleccionar...</option>
                     <option value="a-to-z">A...Z</option>
                     <option value="z-to-a">Z...A</option>
                   </select>
-                </section>            
+                </section>
+                <span class="navbar-text">
+                  Datos curiosos...
+                </span>
+          <select hidden id="select-data">
+              <option value="0">Seleccionar...</option>
+              <option value="Kanto">Kanto</option>
+            </select>
+          </section>           
+          <input id="showdato" class="form-control" type="text" placeholder="¿Sabías que en Kanto sólo hay 12 Pokémon tipo fuego?" readonly>
             </div>
           </nav>
 

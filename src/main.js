@@ -1,6 +1,8 @@
 /* Manejo del DOM */
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('card');
+const conditionDato = document.getElementById('select-data').value;
+
 const showData = (data) => {
   
   data.forEach(element => {

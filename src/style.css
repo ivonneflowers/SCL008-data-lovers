@@ -87,6 +87,7 @@
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+
 }
 
 /* Titulo: Selecciona la zona que quieres */
@@ -148,6 +149,18 @@
   background-position: center;
   background-repeat: repeat;
   height: 100%;
+  padding-left: 7.5%;
+}
+
+.form-control {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #5E7E7F;
+
 }
 
 /* tarjetas de pokémon */
@@ -207,7 +220,6 @@
 }
 
 .pokemon-num{
-  font-family: Tahoma, sans-serif;
   font-weight: 200;
   font-size: 30px;
   color: white;
@@ -220,13 +232,11 @@
 }
 
 .modal-footer{
-  font-family: Tahoma, sans-serif;
   background-color: #d9e5e6;
   border-radius: 0px 0px 50px 50px;
 }
 
 .modal-title{
-  font-family: Tahoma, sans-serif;
   font-weight: 200;
   font-size: 30px;
   color: #5e7e7f;
@@ -249,7 +259,6 @@
 }
 
 .navbar {
-  font-family: Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #4f6d6e;
@@ -263,6 +272,18 @@
   text-align: center;
   letter-spacing: 0.1em;
   color: #5E7E7F;
+}
+
+.select-type {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #5E7E7F;
+
 }
 
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
