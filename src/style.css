@@ -206,17 +206,19 @@
   background-color: #d9e5e6;
 }
 
-.pokemon-num{
+/*.pokemon-num{
   font-family: Tahoma, sans-serif;
   font-weight: 200;
   font-size: 30px;
   color: white;
-  text-align: center;
-}
+  margin-left: 140%;
+  margin-top: 30%;
+}*/
 
 .pokemon-modal-img{
   margin-left: 140%;
   margin-top: 30%;
+  width: 3cm;
 }
 
 .modal-footer{
@@ -232,6 +234,28 @@
   color: #5e7e7f;
   text-align: center;
 }
+
+.pokemon-candy-container{
+width: 120px;
+height: 120px;
+background-color: #8bafb156;
+border-radius: 10px;
+}
+
+.pokemon-candy{
+  font-family: Tahoma, sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: #5e7e7f;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+ }
+
+#candy-img {
+  width: 1cm;
+}
+
 
  .seeMore{
   font-size: 12px;

@@ -15,12 +15,7 @@ const showData = (data) => {
     <div class="modal-content">
       <div class="modal-header">
       <div>
-      </div>
-      <div>
       <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
-      </div>
-      <div>
-      <p class="pokemon-num"> ${element.num}</p>
       </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -28,11 +23,15 @@ const showData = (data) => {
       </div>
       <div class="modal-body">
       <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
+
       <p class="pokemon-type"> Tipos: ${element.type} </p>
       <br>
       <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
       <br>
-      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
+      <div class="pokemon-candy-container">
+      <p class="pokemon-candy"> ${element.candy_count} ${element.candy} para evolucionar </p>
+      <img id="candy-img" src= "img/Bulbasaur_candy.png" alt="candy img">
+      </div>
       <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
       <img id="egg-img" src= "img/egg.png" alt="egg img">
       </div>
