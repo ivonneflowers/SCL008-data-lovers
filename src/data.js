@@ -2,7 +2,6 @@ const filterData = (data, condition) => {
   let filter = data.filter(element => {
     return element.type.includes(condition) === true;
   })
-  console.log(filter)
   return filter;
 }
 

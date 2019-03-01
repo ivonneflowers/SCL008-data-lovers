@@ -252,7 +252,17 @@
   font-family: Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 300;
-  color: #5e7e7f;
+  color: #4f6d6e;
+}
+.navbar-brand {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #5E7E7F;
 }
 
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
