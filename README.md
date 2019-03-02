@@ -1,5 +1,5 @@
 # Poképedia
-![Logo Poképedia](https://aqui va el link de la imagen)
+![Logo Poképedia](pokepedia-logo.png)
 
 
 ## 👀 ¿De qué se trata? 
@@ -33,9 +33,9 @@ Poképedia es una aplicación web que te permite enlazar tu cuenta de Pokémon G
 ## ✏️ Planificación del proyecto
  
  Después de leer detenidamente los [requisitos del proyecto](https://github.com/Laboratoria/SCL008-data-lovers), se procedió a realizar una *lista de tareas* según los procedimientos mas comunes para llevar a cabo esta misión. Posteriormente se iría puliendo y desglosando de acuerdo a las *historias de usuario* , *prototipos de baja y alta fidelidad* y *encuestas* que en conjunto nos dieron una idea más específica sobre lo que debíamos hacer y como comenzar a trabajar.  
- También se realizó un breve *diagráma de flujo* donde se expusieron las principales características que querían mostrarse en la aplicación, a pesar de que era un bosquejo bastante arcaico nos dio la idea que queríamos realizar después en el el *prototipo de baja fidelidad*
+ También se realizó un breve *diagráma de flujo* donde se expusieron las principales características que querían mostrarse en la aplicación. A pesar de que era un bosquejo bastante arcaico, nos dio la idea que queríamos realizar después en el el *prototipo de baja fidelidad*
 
- ![Diagrama de fujo](https://ibb.co/jfppy8f)
+ ![Diagrama de fujo](diagrama-de-flujo.jpg)
 
  link de enlace para tablero de planificación (Trello) [aquí](https://trello.com/b/YGdTtMSS/proyecto-2-data-lovers) 👈
 
@@ -43,7 +43,16 @@ Poképedia es una aplicación web que te permite enlazar tu cuenta de Pokémon G
 ## 👦👧 Estudio de usuario
 
 ### Historias de usuario
+Para poder crearse una idea mucho más clara de los objetivos que se necesitaban cumplir en la aplicación, se decidió crear algunas *Historias de usuario*, donde les dabamos a estos usuarios ideales algunas necesidades a cumplir para tener una mejor idea de como realizarlas. 
 
+![primer bosquejo historias de usuario](historias-de-usuario1.jpg)
+Aquí se muestra el primer acercamiento de las historias de usuario a realizar.
+
+![segundo bosquejo historias de usuario](historias-de-usuario2.jpg)
+Aquí hay una primera iteración de estas.
+
+![tercer bosquejo historias de usuario](historias-de-usuario3.jpg)
+Ultima iteración de historias de usuario, como se puede observar, se ha cambiado el formato y se han desglosado mas especificamente las acciones y necesidades. 
 
 ### Encuestas
 ***
