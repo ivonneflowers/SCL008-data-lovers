@@ -322,7 +322,13 @@
   
    @media (max-width: 731px) {
     .johto {
-      margin-left: 10em;
+      margin-left: 6em;
+    }
+  }
+
+  @media (max-width: 731px) {
+    .sinnoh {
+      margin-left: 6em;
     }
   }
   
@@ -345,8 +351,3 @@
         width: 115%;
       }
     }
-
-
-  .row{
-    width: 100%;
-  }

@@ -24,3 +24,20 @@ describe('Función filterData', () => {
   })
 
 })
+
+describe('Función sortData', () => {
+  const data = [
+    {
+      name: 'Charizard',
+    },
+    {
+      name: 'Alakazam',
+    }
+  ]
+
+  it('debería retornar el objeto Alakazam de primero', () => {
+    assert.deepEqual(window.sortData(data), [{name: 'Charizard'}] )
+    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}] )
+  })
+
+})
