@@ -5,16 +5,17 @@ const card = document.getElementById('card');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
- if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-   document.getElementById("myBtn").style.display = "block";
- } else {
-   document.getElementById("myBtn").style.display = "none";
- }
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
 }
 
 function topFunction() {
- document.body.scrollTop = 0;
- document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 document.getElementById('select-order').addEventListener("change", orderThis);
@@ -149,20 +150,3 @@ const showData = (data) => {
    });
  })
 }
-
-
-window.onload = showData(data)
-document.getElementById("btn-start").addEventListener("click", () => {
-
- document.getElementById("screen1").setAttribute('hidden', true);
- document.getElementById("screen2").removeAttribute('hidden');
-
-})
-
-
-document.getElementById("kanto-img").addEventListener("click", () => {
-
- document.getElementById("screen2").setAttribute('hidden', true);
- document.getElementById("screen3").removeAttribute('hidden');
-
-});

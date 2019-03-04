@@ -2,7 +2,9 @@
 const filterData = (data, condition) => {
   let filter = data.filter(element => {
     return element.type.includes(condition) === true;
-  })//puedo agregar condición que si el valor es 0, mostrar todos los pokémon??
+
+  })//puedo agregar condición que si el valor es 0, mostrar todos los pokémon?? 
+
   return filter;
  }
  

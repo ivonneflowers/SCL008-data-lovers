@@ -14,6 +14,7 @@
   padding: 15px;
   border-radius: 4px;
 }
+
 #myBtn:hover {
   background-color: #555;
 }
@@ -21,6 +22,7 @@
   font-family: Tahoma, sans-serif;
 }
 /* screen 1 */
+
 .bg1{
   background-image: url(img/fondo1.jpg);
   background-size: cover;
@@ -93,6 +95,7 @@
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+
 }
 /* Titulo: Selecciona la zona que quieres */
 .select-zone {
@@ -130,6 +133,7 @@
     margin-top: -170%;
   } 
  /*  hacer que la img del mapa kanto se vea como botón responsive */
+
   a .kanto:hover {
     transition: opacity 0.3s;
     opacity: 0.5;
@@ -214,6 +218,7 @@
   display: flex;
   margin-left: 95%;
 }
+
  .see-more{
   font-size: 12px;
   font-weight: 200;
@@ -228,7 +233,9 @@
   margin: 2%;
   border-radius: 30px;
 }
+
 /* navbar, selects de ordenar, etc */
+
 .navbar {
   font-size: 20px;
   font-weight: 300;
@@ -244,6 +251,7 @@
   letter-spacing: 0.1em;
   color: #5E7E7F;
 }
+
 .form-control {
   font-size: 30px;
   font-weight: 600;
@@ -251,7 +259,9 @@
   font-size: 16px;
   letter-spacing: 0.1em;
   color: #5E7E7F;
+
 }
+
 .select-type {
   font-size: 30px;
   font-style: italic;
@@ -262,6 +272,7 @@
   letter-spacing: 0.1em;
   color: #5E7E7F;
 }
+
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
 @media (max-width: 731px) {
   .kanto, .sinnoh, .johto, .hoenn {
