@@ -316,13 +316,20 @@
 
 @media (max-width: 731px) {
   .kanto, .sinnoh, .johto, .hoenn {
-    height: 2cm;
+    height: 4cm;
+    margin: 5%;
   }
    }
   
    @media (max-width: 731px) {
     .johto {
-      margin-left: 10em;
+      margin-left: 6em;
+    }
+  }
+
+  @media (max-width: 731px) {
+    .sinnoh {
+      margin-left: 6em;
     }
   }
   
@@ -336,7 +343,7 @@
 
   @media (max-width: 500px) {
     .modal-content{
-      width: 350px;
+      width: 325px;
     }
   }
 
@@ -345,10 +352,3 @@
         width: 115%;
       }
     }
-
-
-  .row{
-    width: 100%;
-  }
-
-  

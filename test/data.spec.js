@@ -25,6 +25,7 @@ describe('Función filterData', () => {
 
 })
 
+
 /*describe('Función computeStats'),()=>{
   const data = [
     {
@@ -44,3 +45,27 @@ it('debería retornar 50.0 % de pokemones de agua del total', ()=>{
 
 
 }
+
+describe('Función sortData', () => {
+  const data = [
+    {
+      name: 'Charizard',
+    },
+    {
+      name: 'Alakazam',
+    }
+  ]
+
+  it('debería retornar el objeto Alakazam de primero', () => {
+    assert.deepEqual(window.sortData(data), [{name: 'Charizard'}] )
+    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}] )
+  })
+//sameOrderedMembers??
+})
+
+//función computeData
+
+/* const porcentaje = (32*100)/151
+const resultPorcentaje = porcentaje.toFixed(1);
+console.log('Sabías que los Pokémon tipo agua son el ' + resultPorcentaje + '% de todo Kanto'); */
+
