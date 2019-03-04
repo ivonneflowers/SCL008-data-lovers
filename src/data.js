@@ -1,3 +1,4 @@
+//función para filtrar la data por tipos de pokémon
 const filterData = (data, condition) => {
   let filter = data.filter(element => {
     return element.type.includes(condition) === true;
@@ -7,28 +8,17 @@ const filterData = (data, condition) => {
 
 window.filterData = filterData;
 
-
-//haciendo pruebas para ordenar la data
-
- /* const sortData = () => {
-  let sortData = data.sort(element => {
-    let pokemoncito= POKEMON.pokemon
-    for (let i = 0; i < pokemoncito.length; i++){
-      let order= [];
-      let name = [];
-      name.push(`${pokemoncito[i].name}`);
-      order = name.sort((primerPokemon,segundoPokemon)=>{
-        return primerPokemon.localeCompare(segundoPokemon);
-
-      })
-    };
-  })
+//función para ordenar la data de la A a la Z
+  const sortData = data => {
+  let sort = data.sort( (a, b) => a.name.localeCompare(b.name));
+  return sort;
 } 
 
-const name = ["Maria", "Juanita", "Ale"]
+window.sortData = sortData; 
+
+
+/* const name = ["Maria", "Juanita", "Ale"]
 
 const nameOrden = name.sort((a,b) => {
 return a.localeCompare(b);
-});
-
-window.sortData = sortData; */
+}); */
