@@ -107,6 +107,38 @@ Una vez definido el diseño general de la página, se hicieron nuevamente test d
 * [Segundo testeo a usuario de nivel medio. Primera parte](https://www.useloom.com/share/fd965f3a3f5e43359808e94d7c01b0c5)
 * [Segundo testeo a usuario de nivel medio. Segunda parte](https://www.useloom.com/share/22ded8e0170340ba98f4a35cf6683a9b)
 
+* Aqui va otro link de testeo a usuario 
+
+
+El feedback que pudimos rescatar de estos testeos fue principalmente:
+
+* Dar la posibilidad de ingresar a la página sin ligar directamente la cuenta a la app de Pokémon Go, en algunos casos esto segregaría mucho al universo de posibles usuarios o quizas sólo se interesen por ver información en vez de recibir estadísticas de su perfil.
+
+* Les agradó el tema de que estuviesen organizados como una ficha los Pokémones, pero les interesa que en estas fichas no solo este la imagen, sino también el nombre de este. 
+
+-  Al momento de presionar la ficha se abre un modal con información más específica del Pokémon seleccionado; dentro del feedback que recibimos solo en el modal se ha concluído que:
+
+   - No consideran que el tamaño o el peso sea información que les interese, ya que suelen ser relativos en cuanto a cada especie, además esto no influye en su fortaleza.
+   - Consideran que dentro de lo que más les interesa saber (y por ende debería ser información más a la vista) son las debilidades, la probabilidad de atrape y la hora. También les gustaría saber la cantidad de kilómetros que deben caminar para eclosionar un huevo de cierto tipo, ya que esta info no aparece en el juego. 
+
+* Consideran que la barra de búsqueda es necesaria, pero solo en casos específicos. Por el momento se ha decidido suprimirla y considerarla en futuras iteraciones.
+* La barra de menú debería ser un poco más grande para que resalte dentro de la información expuesta en la pantalla.
+
+
+
+
+
+
+        
+
+
+Junto con esto, hemos logrado hacer algunos testeos a través de celulares y tablets, para evaluar cuan efectivo es el *responsive* que estamos creando para la app. dentro de los feedbacks entregados pudimos rescatar: 
+
+*
+*
+*
+
+
 
 
 
