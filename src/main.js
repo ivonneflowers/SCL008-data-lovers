@@ -2,6 +2,7 @@
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('card');
 
+
 /* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

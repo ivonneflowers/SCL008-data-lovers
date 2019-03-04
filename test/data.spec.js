@@ -39,5 +39,11 @@ describe('Función sortData', () => {
     assert.deepEqual(window.sortData(data), [{name: 'Charizard'}] )
     assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}] )
   })
-
+//sameOrderedMembers??
 })
+
+//función computeData
+
+/* const porcentaje = (32*100)/151
+const resultPorcentaje = porcentaje.toFixed(1);
+console.log('Sabías que los Pokémon tipo agua son el ' + resultPorcentaje + '% de todo Kanto'); */
