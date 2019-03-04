@@ -128,41 +128,145 @@ El feedback que pudimos rescatar de estos testeos fue principalmente:
 
 Junto con esto, hemos logrado hacer algunos testeos a través de celulares y tablets, para evaluar cuan efectivo es el *responsive* que estamos creando para la app. dentro de los feedbacks entregados pudimos rescatar: 
 
+![pantallasos respuestas responsive](feedback-responsive.jpg)
+
 * Los modales en celulares se ven un poco grandes, es necesario modificar el tamaño. 
 
-* 
-*
+* Colocar un botón de "volver atrás", ya que en algunos casos se necesita y hasta ahora solo le obtiene refrescando la página.
 
+* Hacer los datos curiosos "dinámicos", o que se refresquen de vez en cuando para llamar la atención del usuario. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Integrar la opción de ordenar o filtrar según el número de posicionamiento de los Pokémones en el Pokédex. 
 
 ***
 
-## Implementación al código (Resultados)
-### [link a deploy del proyecto](lalal)
-### Pruebas unitarias 
+## ☑️  Implementación al código (Resultados)
+### [Puedes ver nuestrro proyecto web AQUÍ](https://aleisabl.github.io/SCL008-data-lovers/src/index.html#) 👈
+### Funciones realizadas y pruebas unitarias 
 #### Mostrar data
+Para mostrar la data decidimos hacerlo a través de *HTML dinámico*, ya que la cantidad de data que manejábamos era bastante y sería poco práctico el llamarla manualmente; por ende, fue codeada en el main.js y, junto a esto, se incorporaron estilos de *Bootstrap* (tarjetas y modales), para que así nuestra data fuese mostrada de una manera más estéticamente atractiva. 
+
+```
+card.innerHTML = "";
+ result.forEach(element => {
+   card.innerHTML += `<div data-toggle="modal" data-target="#exampleModal${element.id}" class="card" style= "width: 8rem;">
+   <div class= "card-name">
+   <p> ${element.num}</p>
+   <a href="#"><img class= "card-img-top" src="${element.img}" alt="Card image cap"></a>
+   <p class="pokemon-name"> ${element.name}</p>
+   <div class="modal fade" id="exampleModal${element.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+     <div>
+     </div>
+     <div>
+     <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
+     <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
+     </div>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+
+     <p class="pokemon-type"> Tipos: ${element.type} </p>
+     <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
+     <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
+     <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+     <img id="egg-img" src= "img/egg.png" alt="egg img">
+     </div>
+     <div class="modal-footer">
+
+       <button type="button" class="see-more">Cerrar</button>
+     </div>
+   </div>
+   </div>
+   </div>`
+```
+*Aquí esta la manera en que llamamos a la data desde el DOM y lo fuimos sobreescribiendo dentro de las tarjetas y modales de Bootstrap*
+
 #### Filtrar data
+Para filtrar la data se creo la función filterData donde a través del metodo *data.filter* se llamaba a la data desde su archivo y retornaba solo la data que era consecuente con la que el usuario solicitaba (en este caso se decidió filtrar por tipo). Posteriormente la data filtrada era llamada al DOM para poder imprimirla en la pantalla. 
+```
+const filterData = (data, condition) => {
+  let filter = data.filter(element => {
+    return element.type.includes(condition) === true;
+  })
+  return filter;
+}
+
+window.filterData = filterData;
+```
+El test que fue creado para esta función es el siguiente: 
+```
+describe('Función filterData', () => {
+  const data = [
+    {
+      name: 'Charizard',
+      type: 'Fire'
+    },
+    {
+      name: 'Squirtle',
+      type: 'Water'
+    }
+  ]
+
+  it('debería retornar el objeto Charizard al filtrar', () => {
+    assert.deepEqual(window.filterData(data, 'Fire'), [{name: 'Charizard', type: 'Fire'}] )
+  })
+
+  it('debería retornar el objeto Squirtle al filtrar', () => {
+    assert.deepEqual(window.filterData(data, 'Water'), [{name: 'Squirtle', type: 'Water'}] )
+  })
+
+})
+```
+*Para correr este test fue necesario crear una pequeña data ficticia que cumpliera con los parámetros.*
+
 #### Ordenar 
-#### Estadísticas 
+```
+const sortData = data => {
+  let sort = data.sort( (a, b) => a.name.localeCompare(b.name));
+  return sort;
+} 
+
+window.sortData = sortData;
+```
+
+Para esta función se utilizó una formula ya existente en Javascript donde se ordena a través de dos parametros preestablecidos y posteriormente se incorporaba el método *localeCompare* para ordenar en orden alfabético la data (ya que el método sort solo ordena carácteres numéricos). 
+
+```
+AQUI VA ES TEST DE SORTDATA Y SU EXPLICACIÓN
+```
+#### Estadísticas (Promedio de tipo dentro del total)
+
+```
+AQUI VA EL CODIGO DE LA FORMULA COMPUTESTATS
+```
+
+```
+AQUI VA EL TEST DE COMPUTESTATS
+```
+
 ***
 
-## Resumen
-### Reflexión y futuras iteraciones
+## 📑 Resumen
+Después de haber hecho todo el estudio de usuario y haber concretado la etapa inicial del código de nuestra aplicación, se ha podido extraer bastante feedback para hacer una lista de las cosas que se pueden mejorar para futuras iteraciones:
+
+###  👌 Reflexión y futuras iteraciones
+
+◻️  aqui va algo.
+
+◻️  aqui va algo.
+
+◻️  aqui va algo.
+
+◻️  aqui va algo.
+
+◻️  aqui va algo.
+
+*Creado por [Alexandra Fernández](https://github.com/aleisabl) y [Macarena Terán](https://github.com/ivonneflowers). Para [Laboratoria Chile](https://github.com/LaboratoriaChile)*.
+
 
 
