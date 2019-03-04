@@ -18,9 +18,11 @@
 #myBtn:hover {
   background-color: #555;
 }
+
 .html {
   font-family: Tahoma, sans-serif;
 }
+
 /* screen 1 */
 
 .bg1{
@@ -31,12 +33,15 @@
   background-attachment: fixed;
   height: 100vh;
 }
+
 /* img logo pokepedia go */
+
 .logo {
   width: 75%;
   margin-top: 20%;
   margin-left: 13%;
 }
+
 /* "Ingresa tu nombre de usuario y contraseña" */
 .input-username-password{
   font-size: 40px;
@@ -48,9 +53,11 @@
   color: #5e7e7f;
   padding: 25% 6% 5% 0%;
 }
+
 .input {
   margin-top: -3%;
 }
+
 /* style de inputs primera pantalla*/
 .rounded-pill {
   font-size: 25px;
@@ -65,6 +72,7 @@
   padding: 2%;
   margin: 2%;
 }
+
 /* btn ingresar */
 #btn-start {
   background-color: #62d39e;
@@ -75,7 +83,9 @@
   line-height: normal;
   letter-spacing: 2.5px;
 }
+
 /* introducción a la app pantalla 1 */
+
 .introduction{
   font-size: 20px;
   font-weight: 600;
@@ -86,8 +96,11 @@
   color: #5e7e7f;
   padding: 10% 5% 5% 5%;
 }
+
 /* screen 2 */
+
 /* container-2 background */
+
 .bg2 {
   background-image: url(img/fondo-screen-2.png);
   background-size: cover;
@@ -97,7 +110,9 @@
   height: 100vh;
 
 }
+
 /* Titulo: Selecciona la zona que quieres */
+
 .select-zone {
   font-style: normal;
   font-weight: 600;
@@ -109,18 +124,23 @@
   margin-top: 1%;
   color: #5E7E7F;
 }
+
+
 /* img de mapass */
   
+
 .kanto {
   height: 5cm;
   margin-top: 1%;
   margin-left: 80%;
   }
   
+
   .hoenn {
     height: 5cm;
     margin-left: 280%;  
   } 
+
   .sinnoh {
     height: 5cm;
     margin-left: 140%;
@@ -132,6 +152,7 @@
     margin-left: 30em;
     margin-top: -170%;
   } 
+
  /*  hacer que la img del mapa kanto se vea como botón responsive */
 
   a .kanto:hover {
@@ -139,7 +160,9 @@
     opacity: 0.5;
     filter: alpha(opacity=50);
   }
+
  /*  Screen 3 */
+
 /*  container-3 background */
   
 .bg3 {
@@ -150,15 +173,18 @@
   height: 100%;
   padding-left: 7.5%;
 }
+
 /* tarjetas de pokémon */
+
 .card{
   background-color:  #d9e5e6;
   margin-bottom: 29px;
   margin-left: 29px;
   margin-top: 1%;
   border-radius: 10px;
-    width:100px;
+	width:100px;
 }
+
 .card-name{
   font-weight: 90;
   font-size: 18px;
@@ -167,7 +193,9 @@
   padding: 6% 1% 1% 1%;
   text-align: center
 }
+
 /* modal */
+
 .pokemon-candy, .pokemon-weaknesses, .pokemon-type, .pokemon-egg {
   font-style: normal;
   font-weight: 600;
@@ -177,40 +205,50 @@
   letter-spacing: 0.01em;
   color: #5E7E7F;
 }
+
 #egg-img {
   width: 1cm;
 }
+
 .pokemon-name {
   margin-bottom: 1rem;
   margin-top: 1rem; 
+
 }
+
 /*Esstilos del modal*/
+
 .modal-content{
   font-family: Tahoma, sans-serif;
   background-image: linear-gradient(to bottom right, #00538786, #14889F);;
   background-color: transparent;
   border-radius: 50px;
-    width:500px;
+	width:500px;
 }
+
 .modal-body{
   font-family: Tahoma, sans-serif;
   background-color: #d9e5e6;
 }
+
 .pokemon-num{
   font-weight: 200;
   font-size: 30px;
   color: white;
   text-align: center;
 }
+
 .pokemon-modal-img{
   margin-left: 105%;
   margin-top: 5%;
 }
+
 .modal-footer{
   background-color: #d9e5e6;
   border-radius: 0px 0px 50px 50px;
   padding: 0.50rem;
 }
+
 .modal-title{
   font-weight: 200;
   font-size: 30px;
@@ -271,9 +309,11 @@
   text-align: center;
   letter-spacing: 0.1em;
   color: #5E7E7F;
+
 }
 
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
+
 @media (max-width: 731px) {
   .kanto, .sinnoh, .johto, .hoenn {
     height: 2cm;
@@ -287,11 +327,13 @@
   }
   
   /* Mediaquery para ajustar fondos en los teléfonos*/
+
   @media (max-width: 600px) {
     .bg1 {
       height: 100%;
     }
   }
+
   @media (max-width: 500px) {
     .card{
       width: 2rem;
