@@ -14,11 +14,4 @@ window.filterData = filterData;
   return sort;
 } 
 
-window.sortData = sortData; 
-
-
-/* const name = ["Maria", "Juanita", "Ale"]
-
-const nameOrden = name.sort((a,b) => {
-return a.localeCompare(b);
-}); */
+window.sortData = sortData;
