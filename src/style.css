@@ -335,10 +335,18 @@
   }
 
   @media (max-width: 500px) {
-    .card{
-      width: 2rem;
+    .modal-content{
+      width: 350px;
     }
   }
-  .row {
+
+    @media (max-width: 500px) {
+      .html{
+        width: 115%;
+      }
+    }
+
+
+  .row{
     width: 100%;
   }
