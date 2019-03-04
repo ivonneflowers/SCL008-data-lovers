@@ -24,3 +24,23 @@ describe('Función filterData', () => {
   })
 
 })
+
+/*describe('Función computeStats'),()=>{
+  const data = [
+    {
+      name: 'Charizard',
+      type: 'Fire'
+    },
+    {
+      name: 'Squirtle',
+      type: 'Water'
+    }
+  ]
+  
+it('debería retornar 50.0 % de pokemones de agua del total', ()=>{
+  assert.deepEqual(window.computeStats(data,1), 50.0)
+})
+
+
+
+}
