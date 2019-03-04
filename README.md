@@ -124,18 +124,13 @@ El feedback que pudimos rescatar de estos testeos fue principalmente:
 * Consideran que la barra de búsqueda es necesaria, pero solo en casos específicos. Por el momento se ha decidido suprimirla y considerarla en futuras iteraciones.
 * La barra de menú debería ser un poco más grande para que resalte dentro de la información expuesta en la pantalla.
 
-
-
-
-
-
-        
-
+***
 
 Junto con esto, hemos logrado hacer algunos testeos a través de celulares y tablets, para evaluar cuan efectivo es el *responsive* que estamos creando para la app. dentro de los feedbacks entregados pudimos rescatar: 
 
-*
-*
+* Los modales en celulares se ven un poco grandes, es necesario modificar el tamaño. 
+
+* 
 *
 
 

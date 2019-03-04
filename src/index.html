@@ -4,132 +4,154 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=7">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Poképedia Go</title>
+ <title>Poképedia Go</title>
 
-  <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
-  <link rel="shortcut icon" href="Pokeball.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
+ <link rel="shortcut icon" href="Pokeball.ico">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css" />
 
 <!-- Comienza primera pantalla, se muestra el logo, la bienvenida, inputs, etc -->
-  <div id="screen1">  
-  </head>
-    
-  <body>
-      
-    <div class="container-fluid bg1">
-      <div class="row">
-        <div class="col-sm-6">
-          <img class="logo" src="img/pokepedia.png" alt="logopokepedia" srcset="">
-        </div>
-        <div class="col-sm-6">
-          <p class="input-username-password">¡Hola! Por favor ingresa un usuario y contraseña.</p>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-sm-6">
-          <p class= "introduction">
-            La app que te ayuda a investigar sobre tus Pokémon favoritos, ver estadísticas sobre ellos, manejar tu progreso en Pokémon Go y muchas cosas más.
-          </p>
-  
-        </div>
-        <div class="col-sm-6 input">
-          <div  class="input-group flex-nowrap">
-            <input type="text" value="Pepita14" class="rounded-pill"  placeholder="Usuario" aria-label="Usuario" aria-describedby="addon-wrapping">
-          </div>        
-          <div  class="input-group flex-nowrap">
-            <input type="password" class="rounded-pill"  placeholder="Contraseña" aria-label="Contraseña" aria-describedby="addon-wrapping">
-          </div>     
-          <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
-  
-          
-        </div>
-      </div>
-    </div>     
-  
 
-  </div>  <!-- fin div primera pantalla -->
+ </head>
+
+ <body>
+
+     <div id="screen1">
+
+   <div class="container-fluid bg1">
+     <div class="row">
+       <div class="col-sm-6">
+         <img class="logo" src="img/pokepedia.png" alt="logopokepedia">
+       </div>
+       <div class="col-sm-6">
+         <p class="input-username-password">¡Hola! Por favor ingresa un usuario y contraseña.</p>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-sm-6">
+         <p class= "introduction">
+           La app ligada a Pokémon Go que te ayuda a investigar sobre tus Pokémon favoritos, ver estadísticas sobre ellos, manejar tu progreso y muchas cosas más.
+         </p>
+
+       </div>
+       <div class="col-sm-6 input">
+         <div  class="input-group flex-nowrap">
+           <input type="text" value="PokeAdicto14" class="rounded-pill"  placeholder="Usuario" aria-label="Usuario" >
+         </div>
+         <div  class="input-group flex-nowrap">
+           <input type="password" class="rounded-pill"  placeholder="Contraseña" aria-label="Contraseña" >
+         </div>
+         <button type="button" id="btn-start" class="rounded-pill">INGRESAR</button>
+
+       </div>
+     </div>
+   </div>
+
+
+ </div>  <!-- fin div primera pantalla -->
 
 <!-- Comienza segunda pantalla, se muestran los mapas -->
-    <div hidden id = "screen2">
-  
-      <div class="container-fluid bg2" >    
-        <div class="row">
-          <p class= "select-zone"> 
-            Por favor selecciona la Zona que quieres ver
-          </p>     
-      
-          <div class="col-6">
-            <a href="#"><img class= "kanto" id ="kanto-img" src="img/kanto.png" alt="kanto"></a>
-            <div class="col-6">
-              <a href="#"><img class= "hoenn" id ="hoenn-img" src="img/hoenn.png" alt="hoenn"></a>
-              <div class="row">
-                <div class="col-6">
-                  <a href="#"><img class= "sinnoh" id ="sinnoh-img" src="img/sinnoh.png" alt="sinnoh"></a>   
-                  <div class="col-6">    
-                    <a href="#"><img class= "johto" id ="johto-img" src="img/johto.png" alt="johto"></a>
-                    
-      
-                  </div>
-                </div>
-              </div>
-            </div>    
-          </div>
-        </div>
-      </div> 
+   <div hidden id = "screen2">
+
+     <div class="container-fluid bg2" >
+       <div class="row">
+         <p class= "select-zone">
+           Por favor selecciona la Zona que quieres ver
+         </p>
+
+         <div class="col-6">
+           <a href="#"><img class= "kanto" id ="kanto-img" src="img/kanto.png" alt="kanto"></a>
+           <div class="col-6">
+             <a href="#"><img class= "hoenn" id ="hoenn-img" src="img/hoenn.png" alt="hoenn"></a>
+             <div class="row">
+               <div class="col-6">
+                 <a href="#"><img class= "sinnoh" id ="sinnoh-img" src="img/sinnoh.png" alt="sinnoh"></a>
+                 <div class="col-6">
+                   <a href="#"><img class= "johto" id ="johto-img" src="img/johto.png" alt="johto"></a>
 
 
-    </div> <!--  fin div segunda pantalla -->
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
 
-    <!--comienza tercera pantalla, se muestran las tarjetas-->
-    <div hidden id="screen3">   
 
-        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-          <img src="img/AVATAR.png" style="width: 6%;" alt="avatar">
-            <a class="navbar-brand" href="#">Bienvenida Pepita14</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-text" aria-controls="navbar-text" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-text">
-                <section>
-                    <span class="navbar-text">
-                        Busca tu Pokémon favorito
-                      </span>
-                <select id="select-type">
-                    <option value="0">Seleccionar...</option>
-                    <option value="Water">Water</option>
-                    <option value="Fire">Fire</option>
-                    <option value="Grass">Grass</option>
-                    <option value="Poison">Poison</option>
-                  </select>
-                </section>              
-            </div>
-          </nav>
+   </div> <!--  fin div segunda pantalla -->
+<!--comienza tercera pantalla, se muestran las tarjetas-->
+   <div hidden id="screen3">
 
-        <div class="container-fluid bg3">
-          <div class="row" id="card">
-          </div>
-        </div>
+       <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+         <img src="img/AVATAR.png" style="width: 6%;" alt="avatar">
+           <a class="navbar-brand">¡Bienvenido PokeAdicto14!</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-text" aria-controls="navbar-text" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbar-text">
+               <section>
+                   <span class="navbar-text">
+                       Ordena por tipos <i>fuego, agua...<i>
+                     </span>
+               <select id="select-type">
+                   <option value="0">Seleccionar...</option> <!-- debería ser: ver todos -->
+                   <option value="Water">Water</option>
+                   <option value="Fire">Fire</option>
+                   <option value="Grass">Grass</option>
+                   <option value="Poison">Poison</option>
+                   <option value="Electric">Electric</option>
+                 </select>
+               </section>
+               <section>
+                   <span class="navbar-text">
+                       Ordena alfabéticamente...
+                     </span>
+               <select id="select-order" >
+                   <option value="0">Seleccionar...</option>
+                   <option value="a-to-z">A...Z</option>
+                   <option value="z-to-a">Z...A</option>
+                 </select>
+               </section>
+               <span class="navbar-text">
+                 Datos curiosos...
+               </span>
+         <select hidden id="select-data">
+             <option value="0">Seleccionar...</option>
+             <option value="Kanto">Kanto</option>
+           </select>
+         </section>
+         <input id="showdato" class="form-control" type="text" placeholder="¿Sabías que en Kanto sólo hay 12 Pokémon tipo fuego?" readonly>
+           </div>
+         </nav>
 
-    </div> <!-- fin tercera pantalla -->
-    
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+       <div class="container-fluid bg3">
+         <div class="row" id="card">
+         </div>
+       </div>
 
-    <div id="datocurioso">
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Ir Arriba</button>
 
-    </div>
-  </body>
+   </div> <!-- fin tercera pantalla -->
 
-  </html>
+   <script src="./data/pokemon/pokemon.js"></script>
+   <script src="data.js"></script>
+   <script src="main.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+   <div id="datocurioso">
+
+   </div>
+ </body>
+
+ </html>
 
   
