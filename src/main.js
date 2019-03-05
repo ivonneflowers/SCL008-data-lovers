@@ -123,7 +123,6 @@ function orderThis () {
        </button>
      </div>
      <div class="modal-body">
-
      <p class="pokemon-type"> Tipos: ${element.type} </p>
      <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>

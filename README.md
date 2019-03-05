@@ -5,11 +5,11 @@
 ## 👀 ¿De qué se trata? 
 **Poképedia** es una aplicación web responsiva que esta diseñada para jugadores de nivel medio de [Pokémon Go!](https://www.pokemongo.com/es-es/) . Esta te permite acceder a información detallada sobre tus Pokémones favoritos y buscar intuitivamente características y estadísticas que quieras conocer. 
 
-* [¿Cómo funciona?](#como-funciona)
-* [Objetivos de la aplicación](#objetivos-de-la-aplicacion)
-* [Planificación del proyecto](#planificacion-del-proyecto)
-* [Estudio de usuario](#estudio-de-usuario)
-* [Diseño y testeos a usuarios](#diseño-y-testeo-a-usuarios)
+* [¿Cómo funciona?](##¿Cómo-funciona?)
+* [Objetivos de la aplicación](##Objetivos-de-la-aplicación )
+* [Planificación del proyecto](##Planificación-del-proyecto)
+* [Estudio de usuario](##Estudio-de-usuario)
+* [Diseño y testeos a usuarios](##Diseño-y-testeos-a-usuarios)
 * [Implementación al código](#implementación-al-codigo)
 * [Resumen](#resumen)
 * [Reflexión y futuras iteraciones](#reflexion-y-futuras-iteraciones)
@@ -99,6 +99,8 @@ Posterior al primer feedback, se procedió a integrar colores, imágenes y detal
 
 
 * Link de presentación de prototipo [aquí](https://www.figma.com/proto/TkgVtthZSetS4I4I2aDJeNzS/Poképedia?node-id=2%3A0&scaling=contain) 👈
+
+* Link de presentación de prototipo a través de Zeplin [aquí](zpl.io/aNPpgJQ) 👈
 
 Una vez definido el diseño general de la página, se hicieron nuevamente test de usuarios para ver en que se podía mejorar, estos pudieron ser grabados. Aquí estan los links de algunos de estos test. 
 
