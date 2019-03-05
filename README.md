@@ -5,11 +5,11 @@
 ## 👀 ¿De qué se trata? 
 **Poképedia** es una aplicación web responsiva que esta diseñada para jugadores de nivel medio de [Pokémon Go!](https://www.pokemongo.com/es-es/) . Esta te permite acceder a información detallada sobre tus Pokémones favoritos y buscar intuitivamente características y estadísticas que quieras conocer. 
 
-* [¿Cómo funciona?](#como-funciona)
-* [Objetivos de la aplicación](#objetivos-de-la-aplicacion)
-* [Planificación del proyecto](#planificacion-del-proyecto)
-* [Estudio de usuario](#estudio-de-usuario)
-* [Diseño y testeos a usuarios](#diseño-y-testeo-a-usuarios)
+* [¿Cómo funciona?](##¿Cómo-funciona?)
+* [Objetivos de la aplicación](##Objetivos-de-la-aplicación )
+* [Planificación del proyecto](##Planificación-del-proyecto)
+* [Estudio de usuario](##Estudio-de-usuario)
+* [Diseño y testeos a usuarios](##Diseño-y-testeos-a-usuarios)
 * [Implementación al código](#implementación-al-codigo)
 * [Resumen](#resumen)
 * [Reflexión y futuras iteraciones](#reflexion-y-futuras-iteraciones)

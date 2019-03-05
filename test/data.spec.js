@@ -3,6 +3,8 @@ global.assert = require('chai').assert;
 require('../src/data');
 require('./data.spec.js');
 
+//Test de la función de filtrar la data alfabéticamente
+
 describe('Función filterData', () => {
   const data = [
     {
@@ -25,8 +27,10 @@ describe('Función filterData', () => {
 
 })
 
+//Test de la función de mostrar porcentaje de tipos de Pokémon  en toda la data (kanto)'
 
-/*describe('Función computeStats'),()=>{
+describe('Función computeStats', () =>{
+
   const data = [
     {
       name: 'Charizard',
@@ -35,16 +39,19 @@ describe('Función filterData', () => {
     {
       name: 'Squirtle',
       type: 'Water'
+    },
+    {
+      name: 'Lapras',
+      type: 'Water'
     }
   ]
   
-it('debería retornar 50.0 % de pokemones de agua del total', ()=>{
-  assert.deepEqual(window.computeStats(data,1), 50.0)
+it('debería retornar 66.7 % de pokemones de agua del total', () =>{
+  assert.equal(window.computeStats(data), 66.7)
+})
 })
 
-
-
-}
+//Test de la función de ordenar la data alfabéticamente 'A -- Z'
 
 describe('Función sortData', () => {
   const data = [
@@ -53,19 +60,14 @@ describe('Función sortData', () => {
     },
     {
       name: 'Alakazam',
+    },
+    {
+      name: 'Bulbasaur',
     }
   ]
 
   it('debería retornar el objeto Alakazam de primero', () => {
-    assert.deepEqual(window.sortData(data), [{name: 'Charizard'}] )
-    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}] )
+    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}, {name: 'Bulbasaur'}, {name: 'Charizard'}] )
+
   })
-//sameOrderedMembers??
 })
-
-//función computeData
-
-/* const porcentaje = (32*100)/151
-const resultPorcentaje = porcentaje.toFixed(1);
-console.log('Sabías que los Pokémon tipo agua son el ' + resultPorcentaje + '% de todo Kanto'); */
-

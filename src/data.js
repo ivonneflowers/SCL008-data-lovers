@@ -14,6 +14,21 @@ window.filterData = filterData;
   return sort;
 } 
 
-
-
 window.sortData = sortData;
+
+//función para calcular porcentaje de los Pokémon agua en Kanto (32)
+window.computeStats = (data) => {
+  let num = [];
+  for (let i=0; i<data.length; i++) {
+    if (data[i].type.includes('Water') === true) {
+      num.push(data[i]);
+    }
+  }
+
+  let calculate = (num.length*100)/data.length;
+  let resultCalculation = calculate.toFixed(1);
+  return resultCalculation;
+} 
+
+//console.log('Sabías que los Pokémon tipo agua son el ' + resultCalculation + '% de todo Kanto'); */
+
