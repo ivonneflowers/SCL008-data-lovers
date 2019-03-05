@@ -100,6 +100,8 @@ Posterior al primer feedback, se procedió a integrar colores, imágenes y detal
 
 * Link de presentación de prototipo [aquí](https://www.figma.com/proto/TkgVtthZSetS4I4I2aDJeNzS/Poképedia?node-id=2%3A0&scaling=contain) 👈
 
+* Link de presentación de prototipo a través de Zeplin [aquí](zpl.io/aNPpgJQ) 👈
+
 Una vez definido el diseño general de la página, se hicieron nuevamente test de usuarios para ver en que se podía mejorar, estos pudieron ser grabados. Aquí estan los links de algunos de estos test. 
 
 * [Primer testeo a usuario experimentado](https://www.useloom.com/share/b5ff78394657465b9496e6f57555b166)

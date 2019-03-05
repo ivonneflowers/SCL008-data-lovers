@@ -33,8 +33,6 @@ function orderThis () {
    <div class="modal-content">
      <div class="modal-header">
      <div>
-     </div>
-     <div>
      <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
      <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
      </div>
@@ -43,7 +41,6 @@ function orderThis () {
        </button>
      </div>
      <div class="modal-body">
-
      <p class="pokemon-type"> Tipos: ${element.type} </p>
      <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
@@ -87,12 +84,12 @@ const showData = (data) => {
        </button>
      </div>
      <div class="modal-body">
-
      <p class="pokemon-type"> Tipos: ${element.type} </p>
      <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
+     <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="egg img">
      <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
-     <img id="egg-img" src= "img/egg.png" alt="egg img">
+     <img id="egg-img" src= "img/huevo.png" alt="egg img">
      </div>
      <div class="modal-footer">
 

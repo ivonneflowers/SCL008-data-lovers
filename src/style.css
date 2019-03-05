@@ -197,11 +197,12 @@
 /* modal */
 
 .pokemon-candy, .pokemon-weaknesses, .pokemon-type, .pokemon-egg {
+  
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   font-size: 15px;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 0.01em;
   color: #5E7E7F;
 }
