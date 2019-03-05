@@ -47,6 +47,7 @@ const showData = (data) => {
     <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
     <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
     <img id="egg-img" src= "img/egg.png" alt="egg img">
+    <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
     </div>
     <div class="modal-footer">
     <button type="button" class="see-more">Cerrar</button>
@@ -86,6 +87,8 @@ const showData = (data) => {
         <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
         <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
         <img id="egg-img" src= "img/egg.png" alt="egg img">
+        <img id="candy-img" src= "img/Bulbasaur_candy.png" alt="egg img">
+
         </div>
         <div class="modal-footer">        
         <button type="button" class="see-more">Cerrar</button>
@@ -127,7 +130,6 @@ function orderThis () {
      <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
      <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
-     <img id="egg-img" src= "img/egg.png" alt="egg img">
      </div>
      <div class="modal-footer">
 
