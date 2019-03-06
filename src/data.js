@@ -9,12 +9,19 @@ const filterData = (data, condition) => {
 window.filterData = filterData;
 
 //función para ordenar la data de la A a la Z
-  const sortData = data => {
+  const sortData = (data, conditionAZ) => {
   let sort = data.sort( (a, b) => a.name.localeCompare(b.name));
-  return sort;
-} 
+  return a.value(conditionAZ)=== true;
+  }
+  window.sortData=sortData;
 
-window.sortData = sortData;
+
+//función para ordenar la data de la Z a la A 
+ const sortDataBackwards = data =>{
+   let sortBackwards = data.sort( (a,b)=> a.name.localeCompare(b.name));
+   return sortBackwards.reverse();
+ }
+window.sortDataBackwards = sortDataBackwards;
 
 //función para calcular porcentaje de los Pokémon agua en Kanto (32)
 window.computeStats = (data) => {
