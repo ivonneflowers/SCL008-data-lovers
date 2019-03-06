@@ -2,7 +2,7 @@
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('card');
 
-/* window.onscroll = function() {scrollFunction()};
+/*window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -15,7 +15,7 @@ function scrollFunction() {
 function topFunction() {
  document.body.scrollTop = 0;
  document.documentElement.scrollTop = 0;
-} */
+}*/ 
 
 
 const showData = (data) => {
@@ -158,4 +158,14 @@ document.getElementById("kanto-img").addEventListener("click", () => {
   document.getElementById("screen2").setAttribute('hidden', true);
   document.getElementById("screen3").removeAttribute('hidden');
 
+});
+
+document.getElementById("hoenn-img").addEventListener("click", () => {
+  alert("Esta zona todavía no está disponible, disculpa las molestias")
+});
+document.getElementById("sinnoh-img").addEventListener("click", () => {
+  alert("Esta zona todavía no está disponible, disculpa las molestias")
+});
+document.getElementById("johto-img").addEventListener("click", () => {
+  alert("Esta zona todavía no está disponible, disculpa las molestias")
 });
