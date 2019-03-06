@@ -105,7 +105,8 @@ const showData = (data) => {
 
 document.getElementById('select-order').addEventListener("change", orderThis);
 function orderThis () {
- let result = window.sortData(data);
+let conditionAZ = document.getElementById('a-to-z').value;
+let result = window.sortData(data, conditionAZ);
  card.innerHTML = "";
  result.forEach(element => {
    card.innerHTML += `<div data-toggle="modal" data-target="#exampleModal${element.id}" class="card" style= "width: 8rem;">
@@ -178,6 +179,9 @@ document.getElementById("sinnoh-img").addEventListener("click", () => {
 });
 document.getElementById("johto-img").addEventListener("click", () => {
   alert("Esta zona todavía no está disponible, disculpa las molestias")
+  
+usernameValue = document.getElementById('username').value;
+document.getElementById('show-username').innerHTML += `¡Bienvenido ${usernameValue}!`;
 
 });
 
