@@ -19,6 +19,8 @@
   background-color: #555;
 }
 
+/* tipografía de todo el proyecto */
+
 .html {
   font-family: Tahoma, sans-serif;
 }
@@ -220,7 +222,6 @@
 /*Esstilos del modal*/
 
 .modal-content{
-  font-family: Tahoma, sans-serif;
   background-image: linear-gradient(to bottom right, #00538786, #14889F);;
   background-color: transparent;
   border-radius: 50px;
@@ -228,7 +229,6 @@
 }
 
 .modal-body{
-  font-family: Tahoma, sans-serif;
   background-color: #d9e5e6;
 }
 
