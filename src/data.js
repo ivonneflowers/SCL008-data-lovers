@@ -9,12 +9,11 @@ const filterData = (data, condition) => {
 window.filterData = filterData;
 
 //función para ordenar la data de la A a la Z
-  const sortData = (data, conditionAZ) => {
+const sortData = data => {
   let sort = data.sort( (a, b) => a.name.localeCompare(b.name));
-  return a.value(conditionAZ)=== true;
-  }
+  return sort;
+} 
   window.sortData=sortData;
-
 
 //función para ordenar la data de la Z a la A 
  const sortDataBackwards = data =>{
