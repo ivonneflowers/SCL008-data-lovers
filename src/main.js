@@ -160,4 +160,7 @@ document.getElementById("kanto-img").addEventListener("click", () => {
   document.getElementById("screen2").setAttribute('hidden', true);
   document.getElementById("screen3").removeAttribute('hidden');
 
+  usernameValue = document.getElementById('username').value;
+  document.getElementById('show-username').innerHTML += `¡Bienvenido ${usernameValue}!`;
+
 });
