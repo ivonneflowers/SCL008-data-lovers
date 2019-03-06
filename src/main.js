@@ -74,6 +74,8 @@ const showData = (data) => {
         <div class="modal-content">
         <div class="modal-header">
         <div>
+        </div>
+        <div>
         <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
         <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
         </div>
@@ -87,15 +89,13 @@ const showData = (data) => {
         <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
         <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
         <img id="egg-img" src= "img/egg.png" alt="egg img">
-        <img id="candy-img" src= "img/Bulbasaur_candy.png" alt="egg img">
-
+        <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
         </div>
-        <div class="modal-footer">        
+        <div class="modal-footer">
         <button type="button" class="see-more">Cerrar</button>
-
         </div>
         </div>
-        </div>      
+        </div>
         </div>`
       })
     });
@@ -116,25 +116,28 @@ function orderThis () {
    <div class="modal fade" id="exampleModal${element.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
    <div class="modal-content">
-     <div class="modal-header">
-     <div>
-     <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
-     <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
-     </div>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-     <p class="pokemon-type"> Tipos: ${element.type} </p>
-     <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-     <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
-     <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
-     </div>
-     <div class="modal-footer">
-
-       <button type="button" class="see-more">Cerrar</button>
-     </div>
+   <div class="modal-header">
+   <div>
+   </div>
+   <div>
+   <h5 class="modal-title" id="exampleModalLabel">${element.name}</h5>
+   <img  class = "pokemon-modal-img" src="${element.img}" alt="modal img">
+   </div>
+   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+   </button>
+   </div>
+   <div class="modal-body">
+   <p class="pokemon-type"> Tipos: ${element.type} </p>
+   <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
+   <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
+   <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+   <img id="egg-img" src= "img/egg.png" alt="egg img">
+   <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
+   </div>
+   <div class="modal-footer">
+   <button type="button" class="see-more">Cerrar</button>
+   </div>
    </div>
    </div>
    </div>`
@@ -160,6 +163,10 @@ document.getElementById("kanto-img").addEventListener("click", () => {
   document.getElementById("screen2").setAttribute('hidden', true);
   document.getElementById("screen3").removeAttribute('hidden');
 
+  
+  let usernameValue = document.getElementById('username').value;
+  document.getElementById('show-username').innerHTML += ` ${usernameValue}!`;
+
 
 });
 
@@ -171,9 +178,7 @@ document.getElementById("sinnoh-img").addEventListener("click", () => {
 });
 document.getElementById("johto-img").addEventListener("click", () => {
   alert("Esta zona todavía no está disponible, disculpa las molestias")
-  
-  usernameValue = document.getElementById('username').value;
-  document.getElementById('show-username').innerHTML += `¡Bienvenido ${usernameValue}!`;
-
 
 });
+
+
