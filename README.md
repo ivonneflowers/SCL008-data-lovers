@@ -5,12 +5,12 @@
 ## 👀 ¿De qué se trata? 
 **Poképedia** es una aplicación web responsiva que esta diseñada para jugadores de nivel medio de [Pokémon Go!](https://www.pokemongo.com/es-es/) . Esta te permite acceder a información detallada sobre tus Pokémones favoritos y buscar intuitivamente características y estadísticas que quieras conocer. 
 
-* [¿Cómo funciona?](##¿Cómo-funciona?)
-* [Objetivos de la aplicación](##Objetivos-de-la-aplicación )
-* [Planificación del proyecto](##Planificación-del-proyecto)
-* [Estudio de usuario](##Estudio-de-usuario)
-* [Diseño y testeos a usuarios](##Diseño-y-testeos-a-usuarios)
-* [Implementación al código](#implementación-al-codigo)
+* [¿Cómo funciona?](#¿cómo-funciona?)
+* [Objetivos de la aplicación](#objetivos-de-la-aplicación )
+* [Planificación del proyecto](#planificación-del-proyecto)
+* [Estudio de usuario](#estudio-de-usuario)
+* [Diseño y testeos a usuarios](#diseño-y-testeos-a-usuarios)
+* [Implementación al código](#implementación-al-código-(Resultados))
 * [Resumen](#resumen)
 * [Reflexión y futuras iteraciones](#reflexion-y-futuras-iteraciones)
 
@@ -189,7 +189,7 @@ card.innerHTML = "";
 *Aquí esta la manera en que llamamos a la data desde el DOM y lo fuimos sobreescribiendo dentro de las tarjetas y modales de Bootstrap*
 
 #### Filtrar data
-Para filtrar la data se creo la función filterData donde a través del metodo *data.filter* se llamaba a la data desde su archivo y retornaba solo la data que era consecuente con la que el usuario solicitaba (en este caso se decidió filtrar por tipo). Posteriormente la data filtrada era llamada al DOM para poder imprimirla en la pantalla. 
+Para filtrar la data se creo la función filterData donde a través del metodo *data.filter* se llamaba a la data desde su archivo y retornaba solo la que era consecuente con la que el usuario solicitaba (en este caso se decidió filtrar por tipo). Posteriormente la data filtrada era llamada al DOM para poder imprimirla en la pantalla. 
 ```
 const filterData = (data, condition) => {
   let filter = data.filter(element => {
@@ -227,6 +227,7 @@ describe('Función filterData', () => {
 *Para correr este test fue necesario crear una pequeña data ficticia que cumpliera con los parámetros.*
 
 #### Ordenar 
+Para esta función se utilizó una formula ya existente en Javascript donde se ordena a través de dos parametros preestablecidos y posteriormente se incorporaba el método *localeCompare* para ordenar en orden alfabético la data (ya que el método sort solo ordena carácteres numéricos).
 ```
 const sortData = data => {
   let sort = data.sort( (a, b) => a.name.localeCompare(b.name));
@@ -236,37 +237,85 @@ const sortData = data => {
 window.sortData = sortData;
 ```
 
-Para esta función se utilizó una formula ya existente en Javascript donde se ordena a través de dos parametros preestablecidos y posteriormente se incorporaba el método *localeCompare* para ordenar en orden alfabético la data (ya que el método sort solo ordena carácteres numéricos). 
+Para el test se decidió aplicar la misma data pequeña que habíamos creado anteriormente, y a esta se le pidió ordenarla alfabéticamente. 
 
 ```
-AQUI VA ES TEST DE SORTDATA Y SU EXPLICACIÓN
+describe('Función sortData', () => {
+  const data = [
+    {
+      name: 'Charizard',
+    },
+    {
+      name: 'Alakazam',
+    },
+    {
+      name: 'Bulbasaur',
+    }
+  ]
+
+  it('debería retornar el objeto Alakazam de primero', ()=>{
+    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}, {name: 'Bulbasaur'}, {name: 'Charizard'}] )
+  })
+});
 ```
 #### Estadísticas (Promedio de tipo dentro del total)
+ Finalmente para calcular el porcentaje de un tipo dentro del total de nuestra data, se procedió a ejecutar la siguiente función:
+``` 
+  window.computeStats = (data) => {
+  let num = [];
+  for (let i=0; i<data.length; i++) {
+    if (data[i].type.includes('Water') === true) {
+      num.push(data[i]);
+    }
+  }
 
+  let calculate = (num.length*100)/data.length;
+  let resultCalculation = calculate.toFixed(1);
+  return resultCalculation;
+} 
 ```
-AQUI VA EL CODIGO DE LA FORMULA COMPUTESTATS
+y el test lo ejecutamos de la siguiente manera:
 ```
+describe('Función computeStats', ()=>{
 
+  const data = [
+    {
+      name: 'Charizard',
+      type: 'Fire'
+    },
+    {
+      name: 'Squirtle',
+      type: 'Water'
+    },
+    {
+      name: 'Lapras',
+      type: 'Water'
+    }
+  ]
+  
+it('debería retornar 66.7 % de pokemones de agua del total', () =>{
+  assert.equal(window.computeStats(data), 66.7)
+})
+});
 ```
-AQUI VA EL TEST DE COMPUTESTATS
-```
-
+Como podemos apreciar, el test se ejecutó con dos parámetros que nos permitieron sacar el porcentaje del total, de las cuales eran la *data total y el porcentaje que debía retornar*.
 ***
 
 ## 📑 Resumen
-Después de haber hecho todo el estudio de usuario y haber concretado la etapa inicial del código de nuestra aplicación, se ha podido extraer bastante feedback para hacer una lista de las cosas que se pueden mejorar para futuras iteraciones:
+Después de haber hecho todo el estudio de usuario y haber concretado la etapa inicial del código de nuestra aplicación, se ha podido extraer bastante feedback para hacer una lista de las cosas que se pueden mejorar para futuras iteraciones, dentro de estas pudimos destacar:
 
 ###  👌 Reflexión y futuras iteraciones
 
-◻️  aqui va algo.
 
-◻️  aqui va algo.
+◻️  Entregar la posibilidad de ingresar a la página sin ligar directamente a tu cuenta de Pokémon Go, es decir, dejar ambas opciones para las personas que solo quieran ver la información sin que le cree estadísticas propias .
 
-◻️  aqui va algo.
+◻️  Incorporar una barra de búsqueda que permita buscar Pokémones según nombre o palabras clave.
 
-◻️  aqui va algo.
+◻️  Agrandar la barra de menú y ver la posibilidad de de colocar la información de filtrado en una barra lateral en el lado izquierdo.
 
-◻️  aqui va algo.
+◻️  Colocar un botón de volver atrás al momento de filtrar y ordenar. 
+
+◻️  Colocar datos curiosos dinámicos o que se muestren a través de un gráfico para hacerlo más interactivo
 
 *Creado por [Alexandra Fernández](https://github.com/aleisabl) y [Macarena Terán](https://github.com/ivonneflowers). Para [Laboratoria Chile](https://github.com/LaboratoriaChile)*.
 
