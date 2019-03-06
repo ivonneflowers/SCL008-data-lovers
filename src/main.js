@@ -47,6 +47,7 @@ const showData = (data) => {
     <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
     <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
     <img id="egg-img" src= "img/egg.png" alt="egg img">
+    <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
     </div>
     <div class="modal-footer">
     <button type="button" class="see-more">Cerrar</button>
@@ -86,6 +87,8 @@ const showData = (data) => {
         <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
         <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
         <img id="egg-img" src= "img/egg.png" alt="egg img">
+        <img id="candy-img" src= "img/Bulbasaur_candy.png" alt="egg img">
+
         </div>
         <div class="modal-footer">        
         <button type="button" class="see-more">Cerrar</button>
@@ -127,7 +130,6 @@ function orderThis () {
      <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
      <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
      <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
-     <img id="egg-img" src= "img/egg.png" alt="egg img">
      </div>
      <div class="modal-footer">
 
@@ -158,6 +160,7 @@ document.getElementById("kanto-img").addEventListener("click", () => {
   document.getElementById("screen2").setAttribute('hidden', true);
   document.getElementById("screen3").removeAttribute('hidden');
 
+
 });
 
 document.getElementById("hoenn-img").addEventListener("click", () => {
@@ -168,4 +171,9 @@ document.getElementById("sinnoh-img").addEventListener("click", () => {
 });
 document.getElementById("johto-img").addEventListener("click", () => {
   alert("Esta zona todavía no está disponible, disculpa las molestias")
+  
+  usernameValue = document.getElementById('username').value;
+  document.getElementById('show-username').innerHTML += `¡Bienvenido ${usernameValue}!`;
+
+
 });

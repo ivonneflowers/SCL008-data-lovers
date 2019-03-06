@@ -3,7 +3,7 @@
 
 
 ## 👀 ¿De qué se trata? 
-**Poképedia** es una aplicación web responsiva que esta diseñada para jugadores de nivel medio de [Pokémon Go!](https://www.pokemongo.com/es-es/) . Esta te permite acceder a información detallada sobre tus Pokémones favoritos y buscar intuitivamente características y estadísticas que quieras conocer. 
+**Poképedia** es una aplicación web responsiva que esta diseñada para jugadores de nivel medio de [Pokémon Go!](https://www.pokemongo.com/es-es/) . Esta te permite acceder a información detallada sobre tus Pokémon favoritos y buscar intuitivamente características y estadísticas que quieras conocer. 
 
 * [¿Cómo funciona?](#¿cómo-funciona?)
 * [Objetivos de la aplicación](#objetivos-de-la-aplicación )
@@ -18,14 +18,16 @@
 ***
 
 ## 💡 ¿Cómo funciona? 
-Poképedia es una aplicación web que te permite enlazar tu cuenta de Pokémon Go a la plataforma y asi crear un *perfil de usuario*, en este puedes guardar y ver estadísticas de tus progresos en el juego y también de tus pokémones favoritos revisados dentro de la misma app. 
+Poképedia es una aplicación web que te permite enlazar tu cuenta de Pokémon Go a la plataforma y asi crear un *perfil de usuario*, en este puedes guardar y ver estadísticas de tus progresos en el juego y también de tus Pokémon favoritos revisados dentro de la misma app. 
 ***
 ## 📋 Objetivos de la aplicación 
 * Entrar a la plataforma utilizando y enlazando tu cuenta de Pokémon Go. 
-* Dividir los Pokémones según el sector donde ellos se hayan encontrado y permitir al usuario escojerlos de esta forma. 
-* Visualizar Pokémones a través de tarjetas con información destacada.
 
-* Clasificar y filtrar Pokémones según los deseos del usuario para acceder mas facilmente a alguna característica específica. 
+* Dividir los Pokémon según el sector donde ellos se hayan encontrado y permitir al usuario escojerlos de esta forma. 
+
+* Visualizar Pokémon a través de tarjetas con información destacada.
+
+* Clasificar y filtrar Pokémon según los deseos del usuario para acceder mas facilmente a alguna característica específica. 
 
 * Proporcionar un perfil de usuario que permita guardar progresos y estadísticas de lo que el usuario desee. 
 
@@ -116,7 +118,7 @@ El feedback que pudimos rescatar de estos testeos fue principalmente:
 
 * Dar la posibilidad de ingresar a la página sin ligar directamente la cuenta a la app de Pokémon Go, en algunos casos esto segregaría mucho al universo de posibles usuarios o quizas sólo se interesen por ver información en vez de recibir estadísticas de su perfil.
 
-* Les agradó el tema de que estuviesen organizados como una ficha los Pokémones, pero les interesa que en estas fichas no solo este la imagen, sino también el nombre de este. 
+* Les agradó el tema de que estuviesen organizados como una ficha los Pokémon, pero les interesa que en estas fichas no solo este la imagen, sino también el nombre de este. 
 
 -  Al momento de presionar la ficha se abre un modal con información más específica del Pokémon seleccionado; dentro del feedback que recibimos solo en el modal se ha concluído que:
 
@@ -138,7 +140,7 @@ Junto con esto, hemos logrado hacer algunos testeos a través de celulares y tab
 
 * Hacer los datos curiosos "dinámicos", o que se refresquen de vez en cuando para llamar la atención del usuario. 
 
-* Integrar la opción de ordenar o filtrar según el número de posicionamiento de los Pokémones en el Pokédex. 
+* Integrar la opción de ordenar o filtrar según el número de posicionamiento de los Pokémon en el Pokédex. 
 
 ***
 
@@ -309,7 +311,7 @@ Después de haber hecho todo el estudio de usuario y haber concretado la etapa i
 
 ◻️  Entregar la posibilidad de ingresar a la página sin ligar directamente a tu cuenta de Pokémon Go, es decir, dejar ambas opciones para las personas que solo quieran ver la información sin que le cree estadísticas propias .
 
-◻️  Incorporar una barra de búsqueda que permita buscar Pokémones según nombre o palabras clave.
+◻️  Incorporar una barra de búsqueda que permita buscar Pokémon según nombre o palabras clave.
 
 ◻️  Agrandar la barra de menú y ver la posibilidad de de colocar la información de filtrado en una barra lateral en el lado izquierdo.
 
@@ -318,6 +320,3 @@ Después de haber hecho todo el estudio de usuario y haber concretado la etapa i
 ◻️  Colocar datos curiosos dinámicos o que se muestren a través de un gráfico para hacerlo más interactivo
 
 *Creado por [Alexandra Fernández](https://github.com/aleisabl) y [Macarena Terán](https://github.com/ivonneflowers). Para [Laboratoria Chile](https://github.com/LaboratoriaChile)*.
-
-
-
