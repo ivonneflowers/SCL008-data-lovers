@@ -26,6 +26,7 @@ document.getElementById('myBtn').addEventListener( "click" , () => {
 //cartas de los pokémon, adentro se pusieron modales
 
 const showData = (data) => {
+  
 
   data.forEach(element => {
     card.innerHTML +=
@@ -197,6 +198,53 @@ let result = window.sortDataBackwards(data);
 }
 
 window.onload = showData(data)
+
+/* function drawChart() {
+  let dataWater = [];
+   window.data.computeStats(data).forEach(element => {
+     dataWater.push(element);
+   })
+  var data = google.visualization.arrayToDataTable([
+    ['Water', dataWater]
+  ]);
+  var options = {
+    title: 'Pokémon Data'
+  };
+  let chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+  
+}
+  
+document.getElementById('chart-btn').addEventListener( "click" , () => {
+  document.getElementById('piechart').removeAttribute('hidden');
+  drawChart(dataWater)
+}) */
+
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Pokemon', 'Tipos'],
+    ['Agua',     25.5],
+    ['Fuego',      14.8],
+    ['Planta',  60.7],
+    ['Electrico', 47.1],
+    ['Veneno',    7.3]
+  ]);
+
+  var options = {
+    title: 'Tipo de Pokemon en Kanto'
+    
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+  chart.draw(data, options);
+}	
+
+document.getElementById('chart-btn').addEventListener( "click" , () => {
+  document.getElementById('piechart').removeAttribute('hidden');
+  drawChart(dataWater)
+})
 
 //mostrando dato curioso
   
