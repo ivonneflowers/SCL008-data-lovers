@@ -259,19 +259,14 @@ function drawChart() {
 
 document.getElementById('chart-btn').addEventListener( "click" , () => {
   document.getElementById('piechart').removeAttribute('hidden');
-  drawChart(dataWater)
+  drawChart()
 })
 
 //mostrando dato curioso
+
+document.getElementById("show-dato").innerHTML += `¿Sabías que los pokémon tipo agua son el ${window.computeStats(data)} % de la región de Kanto?`
   
 }
-  
-document.getElementById('chart-btn').addEventListener( "click" , () => {
-  document.getElementById('piechart').removeAttribute('hidden');
-
-  drawChart(dataWater)
-
-})
 
 document.getElementById("btn-start").addEventListener("click", () => {
 
@@ -302,9 +297,6 @@ document.getElementById("sinnoh-img").addEventListener("click", () => {
 });
 document.getElementById("johto-img").addEventListener("click", () => {
   alert("Esta zona todavía no está disponible, disculpa las molestias")
-  
-let usernameValue = document.getElementById('username').value;
-document.getElementById('show-username').innerHTML += `¡Bienvenido ${usernameValue}!`;
 
 });
 
