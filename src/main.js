@@ -50,10 +50,10 @@ const showData = (data) => {
     </button>
     </div>
     <div class="modal-body">
-    <p class="pokemon-type"> Tipos: ${element.type} </p>
-    <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-    <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
-    <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+    <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
+    <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
+    <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+    <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
     <img id="egg-img" src= "img/egg.png" alt="egg img">
     <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
     </div>
@@ -93,10 +93,10 @@ const showData = (data) => {
         </button>
         </div>
         <div class="modal-body">
-        <p class="pokemon-type"> Tipos: ${element.type} </p>
-        <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-        <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
-        <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+        <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
+        <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
+        <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+        <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
         <img id="egg-img" src= "img/egg.png" alt="egg img">
         <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
         </div>
@@ -138,10 +138,10 @@ let result = window.sortData(data);
    </button>
    </div>
    <div class="modal-body">
-   <p class="pokemon-type"> Tipos: ${element.type} </p>
-   <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-   <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
-   <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+   <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
+   <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
+   <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+   <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
    <img id="egg-img" src= "img/egg.png" alt="egg img">
    <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
    </div>
@@ -181,10 +181,10 @@ let result = window.sortDataBackwards(data);
    </button>
    </div>
    <div class="modal-body">
-   <p class="pokemon-type"> Tipos: ${element.type} </p>
-   <p class="pokemon-weaknesses"> Debilidades: ${element.weaknesses} </p>
-   <p class="pokemon-candy"> Caramelo: ${element.candy} </p>
-   <p class="pokemon-egg"> Distancia de huevo: ${element.egg} </p>
+   <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
+   <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
+   <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+   <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
    <img id="egg-img" src= "img/egg.png" alt="egg img">
    <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
    </div>
@@ -199,11 +199,27 @@ let result = window.sortDataBackwards(data);
 
 window.onload = showData(data)
 
+
+ function drawChart() {
+
 /* function drawChart() {
   let dataWater = [];
    window.data.computeStats(data).forEach(element => {
      dataWater.push(element);
    })
+
+
+  var data = google.visualization.arrayToDataTable([
+    ['Water', dataWater]
+  ]);
+
+  var options = {
+    title: 'Pokémon Data'
+  };
+
+  let chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+
   var data = google.visualization.arrayToDataTable([
     ['Water', dataWater]
   ]);
@@ -248,7 +264,14 @@ document.getElementById('chart-btn').addEventListener( "click" , () => {
 
 //mostrando dato curioso
   
-document.getElementById("show-dato").innerHTML += `¿Sabías que los pokémon tipo agua son el ${window.computeStats(data)} % de la región de Kanto?`
+}
+  
+document.getElementById('chart-btn').addEventListener( "click" , () => {
+  document.getElementById('piechart').removeAttribute('hidden');
+
+  drawChart(dataWater)
+
+})
 
 document.getElementById("btn-start").addEventListener("click", () => {
 

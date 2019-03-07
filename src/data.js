@@ -32,8 +32,11 @@ window.computeStats = (data) => {
     }
     
   }
-
   let calculate = (num.length*100)/data.length;
   let resultCalculation = calculate.toFixed(1);
   return resultCalculation;
 } 
+
+window.computeStats = computeStats;
+
+
