@@ -48,7 +48,7 @@ const showData = (data) => {
     <div class="modal-body">
     <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
     <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
-    <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+    <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy_count} ${element.candy}</p>
     <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
     <img id="egg-img" src= "img/egg.png" alt="egg img">
     <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
@@ -90,7 +90,7 @@ const showData = (data) => {
         <div class="modal-body">
         <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
         <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
-        <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+        <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy_count} ${element.candy} </p>
         <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
         <img id="egg-img" src= "img/egg.png" alt="egg img">
         <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
@@ -134,7 +134,7 @@ let result = window.sortData(data);
    <div class="modal-body">
    <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
    <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
-   <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+   <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy_count} ${element.candy} </p>
    <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
    <img id="egg-img" src= "img/egg.png" alt="egg img">
    <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
@@ -178,7 +178,7 @@ let result = window.sortDataBackwards(data);
    <div class="modal-body">
    <p class="pokemon-type"> <strong>Tipos:</strong> ${element.type} </p>
    <p class="pokemon-weaknesses"> <strong>Debilidades:</strong> ${element.weaknesses} </p>
-   <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy} </p>
+   <p class="pokemon-candy"> <strong>Caramelo:</strong> ${element.candy_count} ${element.candy} </p>
    <p class="pokemon-egg"> <strong>Distancia de huevo:</strong> ${element.egg} </p>
    <img id="egg-img" src= "img/egg.png" alt="egg img">
    <img id="egg-img" src= "img/Bulbasaur_candy.png" alt="candy img">
