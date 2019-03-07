@@ -30,11 +30,10 @@ window.computeStats = (data) => {
       num.push(data[i]);
     }
   }
-
   let calculate = (num.length*100)/data.length;
   let resultCalculation = calculate.toFixed(1);
   return resultCalculation;
 } 
+window.computeStats = computeStats;
 
-//console.log('Sabías que los Pokémon tipo agua son el ' + resultCalculation + '% de todo Kanto'); */
 
