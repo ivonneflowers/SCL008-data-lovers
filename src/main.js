@@ -2,6 +2,8 @@
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('card');
 
+//botón responsive para ir arriba de la página
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -21,8 +23,10 @@ document.getElementById('myBtn').addEventListener( "click" , () => {
   topFunction()
 })
 
+//cartas de los pokémon, adentro se pusieron modales
 
 const showData = (data) => {
+  
 
   data.forEach(element => {
     card.innerHTML +=
@@ -60,6 +64,7 @@ const showData = (data) => {
     </div>
     </div>`
 
+    //mostrar pokémon ordenados por tipos
  
     document.getElementById('select-type').addEventListener('change', () => {
 
@@ -106,6 +111,7 @@ const showData = (data) => {
   })
 }
 
+//mostrar pokémon ordenados por orden alfabético
 
 document.getElementById('select-order').addEventListener("change", orderThis);
 function orderThis () {
@@ -145,11 +151,10 @@ let result = window.sortData(data);
    </div>
    </div>
    </div>`
-
-
-
  })
 }
+
+//orden alfabético al revés
 
 document.getElementById('select-order').addEventListener("change", orderThisBackwards);
 function orderThisBackwards () {
@@ -189,19 +194,20 @@ let result = window.sortDataBackwards(data);
    </div>
    </div>
    </div>`
-
-
-
  })
 }
 
 window.onload = showData(data)
 
+
  function drawChart() {
+
+/* function drawChart() {
   let dataWater = [];
    window.data.computeStats(data).forEach(element => {
      dataWater.push(element);
    })
+
 
   var data = google.visualization.arrayToDataTable([
     ['Water', dataWater]
@@ -213,6 +219,50 @@ window.onload = showData(data)
 
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
+
+  var data = google.visualization.arrayToDataTable([
+    ['Water', dataWater]
+  ]);
+  var options = {
+    title: 'Pokémon Data'
+  };
+  let chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+  
+}
+  
+document.getElementById('chart-btn').addEventListener( "click" , () => {
+  document.getElementById('piechart').removeAttribute('hidden');
+  drawChart(dataWater)
+}) */
+
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Pokemon', 'Tipos'],
+    ['Agua',     25.5],
+    ['Fuego',      14.8],
+    ['Planta',  60.7],
+    ['Electrico', 47.1],
+    ['Veneno',    7.3]
+  ]);
+
+  var options = {
+    title: 'Tipo de Pokemon en Kanto'
+    
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+  chart.draw(data, options);
+}	
+
+document.getElementById('chart-btn').addEventListener( "click" , () => {
+  document.getElementById('piechart').removeAttribute('hidden');
+  drawChart(dataWater)
+})
+
+//mostrando dato curioso
   
 }
   
@@ -235,12 +285,14 @@ document.getElementById("kanto-img").addEventListener("click", () => {
   document.getElementById("screen2").setAttribute('hidden', true);
   document.getElementById("screen3").removeAttribute('hidden');
 
+  //guardando valor del input usuario en variable y msotrándolo en pantalla
   
   let usernameValue = document.getElementById('username').value;
   document.getElementById('show-username').innerHTML += ` ${usernameValue}!`;
 
-
 });
+
+//agregando alert a los mapas que no funcionan
 
 document.getElementById("hoenn-img").addEventListener("click", () => {
   alert("Esta zona todavía no está disponible, disculpa las molestias")

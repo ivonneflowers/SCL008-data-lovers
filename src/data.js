@@ -20,6 +20,7 @@ const sortData = data => {
    let sortBackwards = data.sort( (a,b)=> a.name.localeCompare(b.name));
    return sortBackwards.reverse();
  }
+
 window.sortDataBackwards = sortDataBackwards;
 
 //función para calcular porcentaje de los Pokémon agua en Kanto (32)
@@ -34,6 +35,7 @@ window.computeStats = (data) => {
   let resultCalculation = calculate.toFixed(1);
   return resultCalculation;
 } 
+
 window.computeStats = computeStats;
 
 

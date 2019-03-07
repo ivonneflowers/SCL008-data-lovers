@@ -19,6 +19,26 @@
   background-color: #555;
 }
 
+/* #myBtnGoBack {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 200px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#5e7e7f;;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtnGoBack:hover {
+  background-color: #555;
+} */
+
 /* tipografía de todo el proyecto */
 
 .html {
