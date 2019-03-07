@@ -343,6 +343,10 @@
 
 }
 
+/* chartsito */
+.chartsito {
+  margin-top: 10px;
+}
 /* Mediaquery para mover los mapas y achicarlos en teléfonos*/
 
 @media (max-width: 731px) {

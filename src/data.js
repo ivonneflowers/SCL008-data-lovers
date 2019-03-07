@@ -30,6 +30,7 @@ window.computeStats = (data) => {
     if (data[i].type.includes('Water') === true) {
       num.push(data[i]);
     }
+    
   }
 
   let calculate = (num.length*100)/data.length;
