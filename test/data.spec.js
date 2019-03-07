@@ -56,7 +56,7 @@ it('debería retornar 66.7 % de pokemones de agua del total', () =>{
 describe('Función sortData', () => {
   const data = [
     {
-      name: 'Charizard',
+      name: 'Charmander',
     },
     {
       name: 'Alakazam',
@@ -67,7 +67,26 @@ describe('Función sortData', () => {
   ]
 
   it('debería retornar el objeto Alakazam de primero', () => {
-    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}, {name: 'Bulbasaur'}, {name: 'Charizard'}] )
+    assert.deepEqual(window.sortData(data), [{name: 'Alakazam'}, {name: 'Bulbasaur'}, {name: 'Charmander'}] )
+
+  })
+})
+
+describe('Función sortDataBackwards', () => {
+  const data = [
+    {
+      name: 'Clefairy',
+    },
+    {
+      name: 'Abra',
+    },
+    {
+      name: 'Zapdos',
+    }
+  ]
+
+  it('debería retornar el objeto Zapdos de primero', () => {
+    assert.deepEqual(window.sortDataBackwards(data), [{name: 'Zapdos'}, {name: 'Clefairy'}, {name: 'Abra'}] )
 
   })
 })
