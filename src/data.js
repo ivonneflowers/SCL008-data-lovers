@@ -36,5 +36,3 @@ window.computeStats = (data) => {
   let resultCalculation = calculate.toFixed(1);
   return resultCalculation;
 } 
-
-window.computeStats = computeStats;
