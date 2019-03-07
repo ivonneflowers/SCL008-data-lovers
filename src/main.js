@@ -21,6 +21,26 @@ document.getElementById('myBtn').addEventListener( "click" , () => {
   topFunction()
 })
 
+/* //botón ir atrás
+window.onscroll = function() {scrollFunction2()};
+
+function scrollFunction2() {
+ if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+   document.getElementById("myBtnGoBack").style.display = "block";
+ } else {
+   document.getElementById("myBtnGoBack").style.display = "none";
+ }
+}
+
+function topFunction2() {
+ document.getElementById('screen3').setAttribute('hidden', true);
+ document.getElementById('screen2').removeAttribute('hidden');
+}
+
+document.getElementById('myBtnGoBack').addEventListener( "click" , () => {
+  topFunction2()
+}) */
+
 
 const showData = (data) => {
 
