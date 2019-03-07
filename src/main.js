@@ -2,6 +2,8 @@
 const data = window.POKEMON.pokemon;
 const card = document.getElementById('card');
 
+//botón responsive para ir arriba de la página
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -21,26 +23,7 @@ document.getElementById('myBtn').addEventListener( "click" , () => {
   topFunction()
 })
 
-/* //botón ir atrás
-window.onscroll = function() {scrollFunction2()};
-
-function scrollFunction2() {
- if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-   document.getElementById("myBtnGoBack").style.display = "block";
- } else {
-   document.getElementById("myBtnGoBack").style.display = "none";
- }
-}
-
-function topFunction2() {
- document.getElementById('screen3').setAttribute('hidden', true);
- document.getElementById('screen2').removeAttribute('hidden');
-}
-
-document.getElementById('myBtnGoBack').addEventListener( "click" , () => {
-  topFunction2()
-}) */
-
+//cartas de los pokémon, adentro se pusieron modales
 
 const showData = (data) => {
 
@@ -80,6 +63,7 @@ const showData = (data) => {
     </div>
     </div>`
 
+    //mostrar pokémon ordenados por tipos
  
     document.getElementById('select-type').addEventListener('change', () => {
 
@@ -126,6 +110,7 @@ const showData = (data) => {
   })
 }
 
+//mostrar pokémon ordenados por orden alfabético
 
 document.getElementById('select-order').addEventListener("change", orderThis);
 function orderThis () {
@@ -165,11 +150,10 @@ let result = window.sortData(data);
    </div>
    </div>
    </div>`
-
-
-
  })
 }
+
+//orden alfabético al revés
 
 document.getElementById('select-order').addEventListener("change", orderThisBackwards);
 function orderThisBackwards () {
@@ -209,13 +193,12 @@ let result = window.sortDataBackwards(data);
    </div>
    </div>
    </div>`
-
-
-
  })
 }
 
 window.onload = showData(data)
+
+//mostrando dato curioso
   
 document.getElementById("show-dato").innerHTML += `¿Sabías que los pokémon tipo agua son el ${window.computeStats(data)} % de la región de Kanto?`
 
@@ -231,12 +214,14 @@ document.getElementById("kanto-img").addEventListener("click", () => {
   document.getElementById("screen2").setAttribute('hidden', true);
   document.getElementById("screen3").removeAttribute('hidden');
 
+  //guardando valor del input usuario en variable y msotrándolo en pantalla
   
   let usernameValue = document.getElementById('username').value;
   document.getElementById('show-username').innerHTML += ` ${usernameValue}!`;
 
-
 });
+
+//agregando alert a los mapas que no funcionan
 
 document.getElementById("hoenn-img").addEventListener("click", () => {
   alert("Esta zona todavía no está disponible, disculpa las molestias")
