@@ -200,14 +200,14 @@ let result = window.sortDataBackwards(data);
 window.onload = showData(data)
 
 
- function drawChart() {
 
-/* function drawChart() {
+
+ /*function drawChart() {
   let dataWater = [];
-   window.data.computeStats(data).forEach(element => {
-     dataWater.push(element);
-   })
-
+  // window.data.computeStats(data).forEach(element => {
+    // dataWater.push(element);
+   //})
+   console.log(window.data.computeStats(data))
 
   var data = google.visualization.arrayToDataTable([
     ['Water', dataWater]
@@ -219,20 +219,11 @@ window.onload = showData(data)
 
   let chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
-
-  var data = google.visualization.arrayToDataTable([
-    ['Water', dataWater]
-  ]);
-  var options = {
-    title: 'Pokémon Data'
-  };
-  let chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-  
 }
   
 document.getElementById('chart-btn').addEventListener( "click" , () => {
   document.getElementById('piechart').removeAttribute('hidden');
+  //console.log(dataWater)
   drawChart(dataWater)
 }) */
 
@@ -266,7 +257,7 @@ document.getElementById('chart-btn').addEventListener( "click" , () => {
 
 document.getElementById("show-dato").innerHTML += `¿Sabías que los pokémon tipo agua son el ${window.computeStats(data)} % de la región de Kanto?`
   
-}
+
 
 document.getElementById("btn-start").addEventListener("click", () => {
 
