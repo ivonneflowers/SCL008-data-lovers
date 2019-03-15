@@ -14,6 +14,7 @@ Se ha decidido aplicar algunas herramientas necesarias para entender mejor el pe
 Para esto se ha creado un usuario ficticio a través de la herramienta **User Persona** donde esta expondrá sus logros y miedos al usar la app. 
 
 ![user persona](user-persona-pokepedia.jpg)
+
 *User persona creado para entender mejor el perfil al que va dirigido la app.*
 
 Al crear a Lorena (este usuario ficticio), se ha creado también un breve **Storytelling** de su experiencia al utilizar la aplicación de Pokémon Go, donde podremos visualizar de mejor manera los problemas concretos a los que se enfrenta en su día a día. 
@@ -26,7 +27,7 @@ Le gusta mucho usar esta aplicación ya que se entretiene al mismo tiempo que pa
 >
 >Cuando la tarde ha acabado y decide irse a su casa, casi siempre toma el metro o una micro que la deja en Plaza de Maipú, a veces toma un colectivo hasta su casa o simplemente camina para aprovechar de eclosionar sus huevos, pero a veces esto no le agrada ya que como no sabe que Pokémon saldrá de estos, suele caminar en vano cuando no le agrada lo que eclosionó del huevo o se repite de lo que ya tiene."
 
-![pokemon jugadores](pokemon-go-players.jpg)
+![pokemon jugadores](pokemon-go-players-01.jpg)
 
 A partir de los inconvenientes surgidos en este *Storytelling*, se han creado nuevas **historias de usuario** en las que se puede trabajar en conjunto con las anteriores para mejorar la experiencia en la app móvil. 
 
