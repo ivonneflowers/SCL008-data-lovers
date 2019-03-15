@@ -1,78 +1,46 @@
-# Data Lovers, viaje extendido
+# Iteración Poképedia Go
 
-![Travel pic](https://assets-auto.rbl.ms/5fefc7fee587f0e4aca6794810f346d3c555463eed4e21eaa015d6fc9e6bcb5d)
-[Fuente](https://www.theodysseyonline.com/road-trips-worthwhile)
+![logo pokepedia](pokepedia-logo.png)
 
-## Resumen del proyecto
+## 📄 Resumen de la iteración 
+En esta etapa se ha decidido iterar en el ámbito de manejo de la aplicación a través de medios móviles como celulares, creando un prototipo responsive de la aplicación; añadiendo así la mayoría de sujerencias solicitadas por los usuarios testeados en el sprint anterior, sumando algunas herramientas de investigación de perfil de usuario y de diseño visual, considerando también las **reglas heurísticas de usabilidad**. 
 
-Después de unas semanas trabajando en el proyecto, queremos proponerte una
-_segunda parte_ que se adapte a tu proceso de aprendizaje **individual**.
-Esto permitirá que consolides, profundices y/o complementes lo aprendido.
+[Puedes ver nuestro proceso de creación AQUI 👈](https://github.com/ivonneflowers/SCL008-data-lovers)
 
-Las alternativas son las siguientes:
 
-### 1. Si no terminaste la "Parte Obligatoria" del proyecto
+## 👩👨 Antes de comenzar a diseñar... (Estudio de usuario) 
 
-Pues termínala ¿no? No te olvides de que estás acá para aprender y no para
-simplemente "pasar" de un proyecto a otro y tener la ilusión de que aprendes.
-No estás compitiendo con nadie más que contigo misma.
+Se ha decidido aplicar algunas herramientas necesarias para entender mejor el perfil de usuario y los problemas a los que estos individuos se enfrentan con respecto a la aplicación de Pokémon Go que pueden ser abarcados y resueltos por Poképedia. 
+Para esto se ha creado un usuario ficticio a través de la herramienta **User Persona** donde esta expondrá sus logros y miedos al usar la app. 
 
-Completa el proyecto original con todo lo que se especifica en
-la [parte obligatoria](README.md#parte-obligatoria).
+![user persona](user-persona-pokepedia.jpg)
+*User persona creado para entender mejor el perfil al que va dirigido la app.*
 
-### 2. Si completaste la "Parte Obligatoria"
+Al crear a Lorena (este usuario ficticio), se ha creado también un breve **Storytelling** de su experiencia al utilizar la aplicación de Pokémon Go, donde podremos visualizar de mejor manera los problemas concretos a los que se enfrenta en su día a día. 
 
-Tienes estas opciones:
 
-2.1. Haz la "Parte Opcional" [(Hacker Edition)](README.md#parte-opcional-hacker-edition).
-Enfócate en los dos puntos principales: _cargar la data usando [`fetch`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)_
-y/o _agregar gráficas con [`Chart.js`](https://www.chartjs.org/)
-o [`Google Charts`](https://developers.google.com/chart/)_. Si ya hiciste esto,
-pasa a las siguientes opciones (obviamente).
+> "Lorena es una estudiante de 23 años de contabilidad de la comuna de Maipú. Es una persona amable y cariñosa y, aunque un poco tímida, tiene un grupo de amigos a los que ella es muy apegada.Parte de su tiempo libre lo utiliza en salir con ellos y jugar Pokémon Go. Siempre se reúnen en alguna plaza concurrida (Casi siempre es en Parque Ohiggins o Parque Forestal) y aprovechan de sentarse y conversar mientras estan en alguna Poképarada o caminan si necesitan capturar Pokémones más lejanos. 
+Le gusta mucho usar esta aplicación ya que se entretiene al mismo tiempo que pasea por la ciudad, pero nunca esta segura de en que horario salir, ya que escucha de sus amigos que hay horarios donde es más fácil capturar a ciertos Pokémones, pero como no sale esa información en la app no puede corroborarla.
+>
+> Otro problema frecuente con el que se enfrenta es que a veces quiere obtener información de algún Pokémon y no puede obtenerla en el juego ya que no lo ha capturado. Por ende si se lo encuentra o lo quiere intercambiar con algún amigo no tiene la certeza de que esta haciendo lo correcto. 
+>
+>Cuando la tarde ha acabado y decide irse a su casa, casi siempre toma el metro o una micro que la deja en Plaza de Maipú, a veces toma un colectivo hasta su casa o simplemente camina para aprovechar de eclosionar sus huevos, pero a veces esto no le agrada ya que como no sabe que Pokémon saldrá de estos, suele caminar en vano cuando no le agrada lo que eclosionó del huevo o se repite de lo que ya tiene."
 
-2.2. Si quieres explorar un poco más sobre el Diseño de Experiencia de Usuario
-(_UX Design_), te proponemos hacer sesiones de _testeo de usabilidad con
-usuarios_ y una evaluación heurística de tu sitio completo. Recuerda incorporar
-aprendizajes y oportunidades de mejora en tu _readme_. Haz una búsqueda de
-referentes de diseño visual para tu sitio que te sirvan de inspiración para
-resolver desafíos de interfaz. A partir de todos estos aprendizajes de
-usabilidad y diseño visual, trabaja en una iteración de la interfaz de tu sitio.
+![pokemon jugadores](pokemon-go-players.jpg)
 
-Así podrás, además, reforzar tus conocimientos sobre _heurísticas de usabilidad_
-y principios de diseño visual.
+A partir de los inconvenientes surgidos en este *Storytelling*, se han creado nuevas **historias de usuario** en las que se puede trabajar en conjunto con las anteriores para mejorar la experiencia en la app móvil. 
 
-2.3 Si quieres profundizar sobre lo ya aprendido de Front-end y codear
-un poco más, elige otra [fuente de datos](README.md#resumen-del-proyecto) para hacer
-otro "Producto". Por ejemplo, si hiciste una visualización con datos del
-Banco Mundial, puedes aplicar todo lo aprendido para, esta vez, hacer una
-sobre Pokémon.
++ YO, COMO jugador nivel 20 de Pokémon GO, QUIERO poder ver la hora en la que un Pokémon específico aparece PARA poder capturarlo más rapidamente. 
 
-2.4 [Refactoriza](https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n) tu código para aumentar
-la cobertura de _tests_ (incluyendo pruebas para componentes de interfaz).
++ YO, COMO jugador frecuente de Pokémon GO, QUIERO poder ver la información de todos los Pokémones fácilmente PARA poder tener conocimiento de estos antes de capturarlos. 
+
++ YO, COMO jugador de Pokémon Go, QUIERO ver que tipo de Pokémon es probable que salga de un huevo PARA asegurarme de obtenerlo y ahorrar caminar en vano. 
+
+
+
+
+
+
+
 
 ## Consideraciones generales
-
-- Esta segunda parte del proyecto es _individual_, salvo alguna excepción que
-  decida tu _Training Manager_.
-
-- Es responsabilidad de lxs _coaches_ y la _Training Manager_, después de las
-  entrevistas del final del proyecto original "Data Lovers", aconsejar y validar
-  qué opciones de todas las detalladas en este `README.md`, se adecúan más
-  a cada estudiante.
-
-## Cómo empezar a trabajar en el proyecto
-
-Para actualizar tu fork/rama de este proyecto con este archivo (`EXTRA.md`),
-puedes hacer _pull_ de los cambios desde la rama `master` del remoto de
-`Laboratoria` con un comando como el siguiente:
-
-```sh
-git pull <repo-url> <branch>
-```
-
-Por ejemplo, si el repo de tu cohort es
-`https://github.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers.git`:
-
-```sh
-git pull https://github.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers.git master
-```
