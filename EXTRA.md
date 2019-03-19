@@ -47,8 +47,8 @@ Posterior al estudio realizado previamente se ha diseñado un *prototipo de alta
 
 Con nuestro prototipo ya definido y las conclusiones obtenidas a partir de este nuevo estudio de usuario se ha logrado testear a dos personas que cumplen con un perfil similar a nuestro usuario ideal creado anteriormente. Son dos mujeres  entre 22 y 25 años, del mismo estrato social y también jugadoras de Pokémon Go. 
 
-+ [Enlace al primer testeo. Daniela, 22 años.]()
-+ [Enlace al segundo testeo. Alejandra, 25 años.]()
++ [Enlace al primer testeo. Daniela, 22 años.](https://www.youtube.com/watch?v=iaD-z3Em8U0)
++ [Enlace al segundo testeo. Alejandra, 25 años.](https://www.youtube.com/watch?v=LWRsz21Gp_4)
 
 ## 📝 Feedback y conclusiones 
 
